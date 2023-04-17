@@ -15,7 +15,7 @@ var server = https.createServer(sslOptions,app);
 */
 var server = require('http').createServer(app);
 
-server.listen(8081);
+server.listen(process.env.PORT|| 8081);
 
 global.io = require("socket.io")(server, {
     cors: {
