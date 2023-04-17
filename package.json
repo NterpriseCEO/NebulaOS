@@ -1,9 +1,14 @@
 {
-	"name": "NebulaOS",
+	"name": "nebula-os",
 	"version": "1.0.0",
 	"main": "server.js",
 	"scripts": {
 		"test": "exit 1",
 		"start": "node server.js"
+	},
+	"author": "NebulaOS",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.18.12"
 	}
 }
