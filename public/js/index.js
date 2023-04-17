@@ -5,12 +5,7 @@ var socket,
     post,
     forceQuit,
     ngrok = window.location.protocol + "//" + window.location.host+"/";
-require.config({
-    urlArgs: "v=1.0000000000001",
-    paths: {
-        socketio: "/socket.io/socket.io"
-    }
-});
+
 window.openNumber = -1;
 require(["jquery"],function() {
     require(["socket.io","jquery-ui","Desktop/desk","OpenCloseDeleteSaves","Taskbar/Task",

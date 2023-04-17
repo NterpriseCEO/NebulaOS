@@ -1,7 +1,7 @@
 var ngrok = window.location.protocol + "//" + window.location.host+"/";
 
 require([ngrok+"publicPhone/js/socket.io.js",ngrok+"node_modules/socket.io-stream/socket.io-stream.js"],function(io,ss) {
-    var socket = io(ngrok);
+    var socket = io();
     $("#callUser").click(function() {
         var user = $("#gIUser").text().split(": ")[1];
         $("#callPane h1").text(user);

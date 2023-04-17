@@ -4,7 +4,7 @@ var express = require("express"),
     app = express();
 app.use(express.static(__dirname));
 app.get("/",function(req,res) {
-    console.log(res);
+    // console.log(res);
 });
 /*var sslOptions = {
     key: fs.readFileSync('cert/key.pem'),
@@ -12,18 +12,24 @@ app.get("/",function(req,res) {
     passphrase:"nebulaos"
 };
 var server = https.createServer(sslOptions,app);
-server.listen(process.env.PORT|| 8080);*/
-var server = app.listen(process.env.PORT|| 8080,function() {
-    console.log("Nebula OS listening on port 8080!");
-});
+*/
+var server = require('http').createServer(app);
 
-global.io = require("socket.io").listen(server),
+server.listen(8081);
+
+global.io = require("socket.io")(server, {
+    cors: {
+      origin: "*",
+      methods: ["GET", "POST", "OPTIONS"]
+    }
+  }),
     login = require("./local_modules/login.js"),
     saveFiles = require("./local_modules/fileFolderSave.js"),
     loadPage = require("./local_modules/loadWebpage.js"),
     calls = require("./local_modules/userCalling.js");
 
 global.io.on("connection",function(client) {
+    console.log("Client connected...");
     console.log(__dirname)
     login(client,global.io,__dirname);
     saveFiles(client,global.io,__dirname);

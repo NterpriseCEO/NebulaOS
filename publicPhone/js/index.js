@@ -14,7 +14,7 @@ require.config({
 });
 require(["jquery","jquery.mobile"],function() {
     require(["socket.io"],function(io) {
-        socket = io(ngrok);
+        socket = io();
         //socket = io("https://d3f325f0.ngrok.io");
         require(["login"],function() {
             $("#gkgmk input:eq(0)").val("alex");
