@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link href="css/literallycanvas.css" rel="stylesheet">
+        <link href="../../../../public/css/materialize.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-with-addons.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.7/react-dom.js"></script>
+        <script src="js/literallycanvas.js"></script>
+        <style>
+            body {
+                overflow:hidden;
+            }
+            nav, .navbar-fixed {
+                height:10vh !important;
+            }
+            .nav-content {
+                padding:1vw;
+            }
+            .nav-wrapper, #fileDropdown {
+                z-index:1010;
+            }
+            .lc-picker {
+                z-index:0 !important;
+            }
+            .my-drawing,.literally {
+                height:calc(90vh - 1vw) !important;
+            }
+            canvas {
+                height:calc(550px - 1vw) !important;
+                overflow:auto;
+            }
+        </style>
+    </head>
+    <body oncontextmenu="return false;">
+        <div class = "navbar-fixed">
+            <nav>
+                <div class = "nav-wrapper white">
+                    <div class = "nav-content row">
+                        <a class = "topButton dropdown-trigger btn grey lighten-2 grey-text text-darken-4 z-depth-0" data-activates = "fileDropdown">File</a>
+                        <ul id = "fileDropdown" class = "dropdown-content">
+                            <li><a id = "saveButton" href = "#!" class = "black-text">Save</a></li>
+                            <li><a id = "loadButton" href = "#!" class = "black-text">Open</a></li>
+                            <li><a id = "newButton" href = "#!" class = "black-text">New</a></li>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="my-drawing"></div>
+        <script src = "../../../../public/js/jquery.js"></script>
+        <script src = "../../../../public/js/materialize.min.js"></script>
+        <script data-main = "js/index.js" src = "../../../../public/js/require2.3.2.js"></script>
+    </body>
+</html>

@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/desktop/desktop.css">
+        <link rel="stylesheet" href="css/infopane/infopane.css">
+        <link rel="stylesheet" href="css/taskbar/taskbar.css">
+        <link rel="stylesheet" href="../../public/uiElementDefaults/ui.css">
+        <link rel="stylesheet" href="../../public/css/login.css">
+        <link rel = "stylesheet" href="../../public/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+
+        <link rel="manifest" href="manifest.json">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+        <script data-main="js/index.js" src="js/require2.3.2.js"></script>
+    </head>
+    <body>
+        <div id="disableBox">
+    	</div>
+        <div id="gkgmk">
+            <div class = "row">
+                <div id = "login-wrap" class = "col s10 offset-s1 grey lighten-2">
+                    <span id="lTitle">Login</span>
+                </div>
+                <div class = "col s10 offset-s1 grey lighten-2">
+                    <input id="username-type" class="loginType browser-default" type="text" placeholder="Username">
+                </div>
+                <div class = "col s10 offset-s1 grey lighten-2">
+                    <input id="password-type" class="loginType browser-default" type="password" placeholder="Password">
+                </div>
+                <div class = "col s5 offset-s1 grey lighten-2">
+                    <a id="dfgs" class="btn-large blue">Sign Up</a>
+                </div>
+                <div class = "col s5 grey lighten-2">
+                    <a id="skglsdkgjls" class="btn-large green">Login</a>
+                </div>
+            </div>
+        </div>
+        <div id="osWrap">
+            <div id="infoPane" class="blur">
+                <div id="time" class="time">
+                </div>
+                <div id="battery" title="Battery">
+                </div>
+            </div>
+            <div id="desktopBox">
+                <div class = "swiper-container">
+                    <div class = "swiper-wrapper">
+                        <div id  = "actionCenter" class = "swiper-slide">
+                            <div id="userIcon">
+                            </div>
+                            <div id="usernameDisplay"></div>
+                            <div id="logOut" class="flatBB" data-text = "logOut"></div>
+                            <div id="mssngsHdr" class="blur" data-text = "notifications"></div>
+                            <div id="messages">
+                                <span id="noMessages" data-text = "noNewMessages"></span>
+                            </div>
+                        </div>
+                        <div class = "swiper-slide">
+                            <span class="time tHP"></span>
+                            <span id="date">Date</span>
+                        	<div id="phoneActions" class="blur">
+                            	<div id="notificationsBtn" class="item">
+                                	<span class="material-icons">notifications</span>
+                                	<div id="nBA"></div>
+                                </div>
+                                <div id="volumeBtn" class="item">
+                                	<span class="material-icons">volume_up</span>
+                                    <span class="vHide material-icons">volume_off</span>
+                                </div>
+                                <div class="item">
+                                    <span class="material-icons">bluetooth</span>
+                                </div>
+                                <div class="item">
+                                    <span class="material-icons">screen_lock_portrait</span>
+                                </div>
+                                <div class="item">
+                                    <span class="material-icons">highlight</span>
+                                </div>
+                                <div class="item">
+                                    <span class="material-icons">location_on</span>
+                                </div>
+                            </div>
+                            <div id = "homepage" class = "appPane"></div>
+                        </div>
+                    </div>
+                </div>
+                <!--<div id="appsTable" class="Applications">
+
+                </div>-->
+                <!--<div id="tableCount">
+                    <div class="tCBullet"></div>
+                </div>-->
+            </div>
+            <div id="taskbar" class="blur">
+                <div id="taskbarItems">
+                </div>
+            </div>
+            <div id="swipeUp">
+                <div id = "swipeUI"></div>
+                <!--<div id="openApps" class="bottomButton"><span class="material-icons">view_carousel</span></div>
+                <div id="homeButton" class="bottomButton"><span class="material-icons">home</span></div>
+                <div id="backButton" class="bottomButton"><span class="material-icons">keyboard_backspace</span></div>-->
+            </div>
+            <div id="openAppsPane" class="blur">
+                <div id="appsList">
+                    <!--<div class="openApp ui-draggable ui-draggable-handle" data-opennumber="0" data-src="mobileApps/Timer.app/">Timer<br><img src="mobileApps/Timer.app//images/icon.png"><div></div></div>
+                    <div class="openApp ui-draggable ui-draggable-handle" data-opennumber="0" data-src="mobileApps/Timer.app/">Timer<br><img src="mobileApps/Timer.app//images/icon.png"><div></div></div>
+                    <div class="openApp ui-draggable ui-draggable-handle" data-opennumber="0" data-src="mobileApps/Timer.app/">Timer<br><img src="mobileApps/Timer.app//images/icon.png"><div></div></div>-->
+                </div>
+            </div>
+        </div>
+        <div class = "fullscreenMessage">
+            <h1 class = "fsmAppTitle">App</h1>
+            <span class = "fsmAppDescription">The Timer is done!</span><br><br>
+            <a id = "messageAction" class = "btn-large blue">View</a>
+        </div>
+    </body>
+</html>

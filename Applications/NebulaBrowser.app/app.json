@@ -1,0 +1,13 @@
+{
+    "clickX":"exitOnClick",
+    "clickFs":"restoreOnClick",
+    "clickMin":"hideOnClick",
+    "isFullscreen":false,
+    "xPos":10,
+    "yPos":10,
+    "width":80,
+    "height":80,
+    "title":"Acceleron",
+    "canFullscreen":true,
+    "noMenuBar":true
+}

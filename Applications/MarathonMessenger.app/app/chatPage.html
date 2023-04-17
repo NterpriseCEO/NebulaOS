@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <div id = "callPane">
+            <video id = "localVideo" height = "300"></video>
+            <video id = "remoteVideo" height = "300"></video>
+            <button id = "cancelCall">Cancel Call</button>
+        </div>
+        <script src = "https://webrtc.github.io/adapter/adapter-latest.js"></script>
+        <script src = "https://simplewebrtc.com/latest-v3.js"></script>
+        <script>
+        var webRTC = new SimpleWebRTC({
+            localVideoEl:"localVideo",
+            removeVideoEl:"remoteVideo",
+            autoRequestMedia:true
+        });
+        </script>
+    </body>
+</html>

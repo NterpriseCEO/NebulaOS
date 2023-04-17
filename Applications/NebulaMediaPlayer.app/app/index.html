@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML5 Media Player</title>
+        <script src = "../../../../public/js/jquery.js"></script>
+        <script src = "../../../../public/js/jquery-ui.js"></script>
+        <script src = "../../../../public/js/materialize.min.js"></script>
+        <script data-main = "js/load.js" src = "../../../../public/js/require2.3.2.js"></script>
+        <script src = "js/index.js"></script>
+        <link rel = "stylesheet" href="../../../../public/css/materialize.min.css">
+        <link href="css/index.css" rel="stylesheet"/>
+    </head>
+    <body id = "body" oncontextmenu="return false;">
+        <div class = "navbar-fixed">
+            <nav>
+                <div class = "nav-wrapper white">
+                    <div class = "nav-content">
+                        <a class = "dropdown-trigger btn grey lighten-2 black-text z-depth-0" data-activates = "fileDropdown">File</a>
+                        <ul id = "fileDropdown" class = "dropdown-content">
+                            <li id = "open"><a href = "#!" class = "black-text">Open</a></div>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id = "img">
+        </div>
+        <div id = "playPane" class = "blur">
+            <div id = "mPlay" class = "b">
+            </div>
+        </div>
+        <div id='media-player'>
+            <video id='media-video' controls>
+                <source type='video/mp4' id = "media-video-source">
+            </video>
+        </div>
+        <!--<div id = "media-wrapper">
+            <div id='media-controls'>
+                <span id = "playedTime" class = "time">00:00:00</span>
+                <div id='play-pause-button' class='play b' title='play'>
+                </div>
+                <div id='stop-button' class='stop b' title='stop'>
+                </div>
+                <progress id = "progress-bar" min = "0" max = "100" value = "0">
+                    0% played!
+                </progress>
+                <div id = "wrap">
+                    <div id = "slider">
+                    </div>
+                    <label id = "value">50%</label>
+                </div>
+                <span id = "timeLeft" class = "time">00:00:00</span>
+            </div>
+        </div>-->
+    </body>
+</html>

@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <link rel = "stylesheet" href="../../../../public/uiElementDefaults/ui.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel = "stylesheet" href="../../../../public/css/materialize.min.css">
+        <link rel = "stylesheet" href="css/index.css">
+        <script data-main = "js/index.js" src = "../../../../public/js/require2.3.2.js"></script>
+    </head>
+    <body oncontextmenu="return false;">
+        <div id = "modal" class = "modal fixed-footer">
+            <div class = "modal-content">
+                <h4>Open With</h4>
+                <ul id = "modalCollection" class = "collection">
+                </ul>
+            </div>
+            <div class = "modal-footer">
+                <a id = "closeModal" class = "modal-close btn-flat red-text">Cancel</a>
+            </div>
+        </div>
+        <div class = "navbar-fixed">
+            <nav>
+                <div class = "nav-wrapper white">
+                    <div class = "nav-content black-text">
+                        <div class = "row searchRow">
+                            <div class = "bgr col s1">
+                                <div class = "col s2">
+                                    <a href = "#!" id = "goUp" class = "black-text"><i class = "material-icons">arrow_back</i></a>
+                                </div>
+                                <div class = "col s2">
+                                    <a href = "#!" id = "goDown" class = "black-text"><i class = "material-icons">arrow_forward</i></a>
+                                </div>
+                                <div class = "col s2">
+                                    <a href = "#!" id = "upDir" class = "black-text"><i class = "material-icons">arrow_upward</i></a>
+                                </div>
+                            </div>
+                            <div class = "col s8 searchCol input-field">
+                                <input id = "pageSearchBar" class = "search browser-default" type = "search" value = "Desktop/">
+                                <i id = "goBttn" class = "material-icons">arrow_forward</i>
+                            </div>
+                            <div class = "col s3 searchCol right input-field">
+                                <input id = "search" type = "search" class = "search browser-default" placeholder = "search">
+                                <i id = "srchBttn" class = "material-icons">search</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <ul class = "side-nav fixed white z-depth-3">
+            <li id = "favFoldersTitle">
+                <a href = "#!">Favourites</a>
+            </li>
+            <li id = "Desktop" class = "favFoldButton blue selected" data-num = "1">
+                <a href = "#!">Desktop</a>
+            </li>
+            <li id = "Documents" class = "favFoldButton" data-num = "2">
+                <a href = "#!">Documents</a>
+            </i>
+            <li id = "Images_Video" class = "favFoldButton" data-num = "3">
+                <a href = "#!">Images/Videos</a>
+            </li>
+            <li id = "Music" class = "favFoldButton" data-num = "4">
+                <a href = "#!">Music</a>
+            </li>
+        </ul>
+        <div id = "middle">
+            <div id = "link">4</div>
+            <div class = "fold folder1 Desktop" data-Folder-Name="Desktop" title = "Desktop" data-P="1">
+            </div>
+            <div class = "fold folder2 Documents" data-Folder-Name="Documents" title = "Documents" data-P="2">
+            </div>
+            <div class = "fold folder3 Images_Video" data-Folder-Name="Images_Video" title = "Images_Video" data-P="3">
+            </div>
+            <div class = "fold folder4 Music" data-Folder-Name="Music" title = "Music" data-P="4">
+            </div>
+        </div>
+        <div id = "addon">
+            <input type = "type"><a id = "doButton" class = "btn blue btn-large">Save</a>
+        </div>
+    </body>
+<html>

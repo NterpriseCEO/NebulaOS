@@ -1,0 +1,18 @@
+{
+    "newEvent":"New Event",
+    "eventTitle":"Event Title",
+    "description":"Description",
+    "chooseColour":"Choose a Colour",
+    "chooseTag":"Choose a Colour Tag",
+    "red":"Red",
+    "orange":"Orange",
+    "yellow":"Yellow",
+    "green":"Green",
+    "blue":"Blue",
+    "purple":"Purple",
+    "saveEvent":"Save Event",
+    "events":"Events",
+    "createNewEvent":"Create New Event",
+    "editEvent":"Edit Event",
+    "deleteEvent":"Delete Event"
+}

@@ -1,0 +1,10 @@
+{
+  "clickX":"exitOnClick",
+  "clickMin":"hideOnClick",
+  "canFullscreen":false,
+  "width":20,
+  "height":65,
+  "xPos":40,
+  "yPos":15,
+  "title":"Calculator"
+}

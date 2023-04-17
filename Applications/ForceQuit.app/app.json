@@ -1,0 +1,11 @@
+{
+    "clickX":"exitOnClick",
+    "clickFs":"restoreOnClick",
+    "clickMin":"hideOnClick",
+    "width":30,
+    "height":50,
+    "xPos":35,
+    "yPos":25,
+    "isFullscreen":false,
+    "title":"Force Quit"
+}

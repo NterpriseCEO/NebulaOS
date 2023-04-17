@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel = "stylesheet" href = "http://localhost:8080/public/css/materialize.min.css" media="screen,projection">
+        <!--<link rel = "stylesheet" href = "css/index.css">-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src = "http://localhost:8080/public/js/NebulaPM.js"></script>
+        <script src = "http://localhost:8080/public/js/jquery.js"></script>
+        <script src = "http://localhost:8080/public/js/materialize.min.js"></script>
+        <script src = "js/index.js"></script>
+    </head>
+    <body>
+        <ul class = "side-nav collection with-header" id = "sidenav">
+            <li class = "mItem collection-header"><h5 data-text = "file"></h5></li>
+            <li id = "save" class = "mItem collection-item"><a><i class = "material-icons">save</i><span data-text = "saveFile"></span></a></li>
+            <li id = "open" class = "mItem collection-item"><a><i class = "material-icons">insert_drive_file</i><span data-text = "loadFile"></span></a></li>
+            <li class = "collection-item"><h5 data-text = "recentFiles"></h5></li>
+        </ul>
+        <div class = "navbar-fixed">
+            <nav>
+                <div class = "nav-wrapper white">
+                    <div class = "nav-content">
+                        <a href = "#" data-activates="sidenav" class ="button-collapse black-text"><i class = "material-icons">menu</i></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class = "row">
+            <div class = "col s12">
+                <textarea id = "edit" class = "materialize-textarea" placeholder="Type here"></textarea>
+            </div>
+        </div>
+    </body>
+</html>

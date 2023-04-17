@@ -1,0 +1,17 @@
+{
+    "noChats":"No chats! Click '+'.",
+    "loadMore":"Load More",
+    "clear":"Clear",
+    "send":"Send",
+    "noChatOpen":"No chat Open!",
+    "images":"Images",
+    "newChat":"New Chat",
+    "typeUsername":"Type in username.",
+    "chattingWith":"Chatting with: ",
+    "viewImages":"View Image(s)",
+    "chatExists":"Chat already Exists!",
+    "userNonExistent":"User does not exist!",
+    "confirm":"Confirm",
+    "wishToDelete":"Do you wish to delete this chat?",
+    "wishToDeleteText":"Do you wish to delete this text?"
+}

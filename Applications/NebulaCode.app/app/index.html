@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <link rel = "stylesheet" href="../../../../public/uiElementDefaults/ui.css">
+        <link rel = "stylesheet" href = "../../../../public/css/materialize.min.css">
+        <link rel = "stylesheet" href = "css/index.css">
+        <script src = "js/ace/min/ace.js"></script>
+        <script src = "js/ace/min/ext-modelist.js"></script>
+        <script data-main = "js/index.js" src = "../../../../public/js/require2.3.2.js"></script>
+    </head>
+    <body oncontextmenu="return false;">
+        <ul id ='fileDropdown' class='dropdown-content'>
+            <li><a href="#!" id = "newFile" class = "black-text">New File</a></li>
+            <li><a href="#!" id = "saveFile" class = "black-text">Save File</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="#!" id = "newProject" class = "black-text">New Project</a></li>
+            <li><a href="#!" id = "openProject" class = "black-text">Open Project</a></li>
+            <li><a href="#!" id = "openNebulaSrc" class = "black-text">Open Nebula Src</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a id = "openAsApp" href="#!" class = "black-text">Open As App</a></li>
+        </ul>
+        <div id = "startUp" class = "grey lighten-4">
+            <div class = "row s6">
+                <div class = "col s8 offset-s2">
+                    <h3>Welcome</h3>
+                </div>
+                <div class = "col s8 offset-s2">
+                    <div class = "card">
+                        <div class = "card-tabs">
+                            <ul id = "startTabs" class = "tabs">
+                                <li class = "tab col s4"><a href = "#newPrjct" class = "active black-text">New Project</a></li>
+                                <li class = "tab col s4"><a href = "#opnPrjct" class = "black-text">Open Project</a></li>
+                                <li class = "tab col s4"><a href = "#quickGuide" class = "black-text">Quickstart Guide</a></li>
+                                <div class = "indicator blue" style = "z-index:1;"></div>
+                            </ul>
+                        </div>
+                        <div class = "card-content">
+                            <div id = "newPrjct" class = "white">
+                                <a href = "#!" id = "new" class = "btn blue">Create</a>
+                            </div>
+                            <div id = "opnPrjct" class = "white">
+                                <a href = "#!" id = "open" class = "btn blue">Open Project</a>
+                            </div>
+                            <div id = "quickGuide" class = "white">
+                                <span class = "card-title">On Start</span>
+                                <p>
+                                    Once you have either created or opened a project,
+                                    you can do many things.
+                                </p><br>
+                                <p>
+                                    Click the little plus sign to create new tabs.
+                                </p><br>
+                                <img src = "../images/plus.png"><br><br>
+                                <p>
+                                    If you have already opened a folder you can
+                                    select and open a file from the file tree.
+                                </p><br>
+                                <img src = "../images/tree.png"><br><br>
+                                <p>
+                                    Once opened, files can be saved using ctrl+s and tabs
+                                    can be closed.
+                                    If you are designing an app, you can open it from the
+                                    file menu by selecting "Open As App" or by using ctrl+r.
+                                </p><br><br>
+                                <img src = "../images/menu.png">
+                            </div>
+                        </div>
+                        <div class = "card-content">
+                            <span class = "card-title">Recent Projects</span>
+                            <span id = "noRecents">No recent projects.</span>
+                            <ul class = "collection hide">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pane row">
+            <div id = "top" class = "col s12 grey lighten-2">
+                <a class = "dropdown-trigger z-depth-0 black-text" data-activates="fileDropdown" href = "#">File</a>
+            </div>
+            <div class = "col s2 blue-grey darken-2">
+                <div id = "projectHeader" class = "col s12 blue-grey darken-2 white-text">
+                    Project
+                </div>
+                <div id = "projectTitle" class = "col s12 white-text truncate">
+                </div>
+                <div id = "files" class = "col s12">
+                </div>
+            </div>
+            <div id = "editor" class = "col s10 blue-grey darken-3 white-text">
+                <div id = "newTab" class = "col s1">+</div>
+                <div id = "fileTabs" class = "col s11 blue-grey darken-3 white-text">
+                    <div class="aTab blue-grey darken-4 selected" data-tab = "tab1">Untitled <i class = "material-icons closeTab">close</i></div>
+                </div>
+                <div id = "tab1" class = "editor"></div>
+            </div>
+        </div>
+    </body>
+</html>

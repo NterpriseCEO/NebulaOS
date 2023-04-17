@@ -1,0 +1,14 @@
+body {
+    font-family: "Segoe UI",Arial,Helvetica,sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(240,240,240);
+}
+#top {
+    display:table;
+}
+
+.my-drawing {
+    flex-grow: 1;
+    height:90vh;
+}

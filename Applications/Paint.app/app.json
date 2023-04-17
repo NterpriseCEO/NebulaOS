@@ -1,0 +1,13 @@
+{
+  "clickX":"exitOnClick",
+  "clickFs":"restoreOnClick",
+  "clickMin":"hideOnClick",
+  "isFullscreen":false,
+  "canFullscreen":true,
+  "xPos":10,
+  "yPos":5,
+  "width":70,
+  "height":80,
+  "title":"Leonardo",
+  "menuBarColor":"rgb(240,240,240)"
+}

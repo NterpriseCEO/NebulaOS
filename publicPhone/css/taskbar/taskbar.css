@@ -1,0 +1,308 @@
+#taskbar {
+    position:absolute;
+    width:100%;
+    height:25vw;
+    bottom:3vh;
+    //background-color:rgba(0,0,0,0.6);
+    background-blend-mode:exclusion;
+}
+#taskbarItems {
+    min-width:100vw;
+    min-height:25vw;
+}
+#taskbarItems .icon {
+    margin-top:2vw;
+}
+#taskbarItems .attl {
+    display:none;
+}
+
+#swipeUp {
+    position:absolute;
+    width:100vw;
+    height:3vh;
+    bottom:0;
+    background-color:rgb(240,240,240);
+    z-index:2;
+}
+#swipeUI {
+    position:relative;
+    top:0.5vh;
+    left:30vw;
+    width:40vw;
+    height:2vh;
+    background-color:black;
+    border-radius:10px;
+}
+
+#openAppsPane {
+    overflow:hidden;
+    position:absolute;
+    width:100vw;
+    height:97vh;
+    top:0;
+    background-color:rgba(0,0,0,0.5);
+    color:white;
+    text-align:center;
+    display:none;
+    z-index:1000;
+    padding:0 4vw 0 4vw;
+}
+#appsList {
+    overflow-x:auto;
+    white-space:nowrap;
+    margin-top:10vh;
+    padding-right:-25vw;
+}
+
+.openApp {
+    position:relative;
+    display:inline-block;
+    box-sizing:border-box;
+    width:100%;
+    height:80vh;
+    padding:2vw;
+    padding-top:5vh;
+    margin-right:4vw;
+    border-radius:10px;
+    box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
+    color:black;
+    font-size:8vw;
+    background-color:rgb(240,240,240);
+}
+.openApp img {
+    width:75%;
+    margin-top:10vh;
+    border-radius:30px;
+}
+.openApp:last-of-type {
+    margin-right:0;
+}
+
+.openApp:not(:first-child) {
+    left:-25vw;
+}
+.hide-me {
+    animation: hideme .5s forwards;
+    opacity: 0;
+}
+@keyframes hideme {
+    100% {
+        width: 0;
+    }
+}
+
+#actionCenter {
+    overflow-y:auto;
+    text-align:center;
+}
+#userIcon {
+    width:30vw;
+    height:30vw;
+    margin-left:35vw;
+    margin-top:2.5vh;
+    background-image:url("../../../public/images/userIcon.png");
+    background-size:contain;
+    border-radius:100%;
+    box-shadow: -1px 0px 19px 0px rgba(0,0,0,0.75);
+}
+#usernameDisplay {
+    width:30vw;
+    margin:1vh auto;
+    background-color:white;
+    font-size:6vw;
+    text-align:center;
+    line-height:3vh;
+    padding:1vw;
+    border-radius:5px;
+}
+#logOut {
+    font-size:6vw;
+    padding:1vw 4vw;
+}
+
+#phoneActions {
+    display:table;
+    width:100vw;
+    height:10vh;
+    margin-top:2vh;
+    table-layout:fixed;
+    border-spacing:20px 10px;
+}
+.item {
+    position:relative;
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+    //color:rgb(0,100,200)
+}
+.item span {
+    font-size:10vw;
+}
+#nBA {
+    position:absolute;
+    display:none;
+    width:5vw;
+    height:5vw;
+    top:2vw;
+    right:-1vw;
+    background-color:red;
+    border-radius:100%;
+}
+.vHide {
+    display:none !important;
+}
+#mssngsHdr {
+    width:100vw;
+    height:auto;
+    margin-top:1vh;
+    font-size:6vw;
+}
+.sticky {
+    position:fixed;
+    top:0;
+    margin:0 !important;
+}
+#messages {
+    text-align:center !important;
+    width:100vw;
+    text-align:left;
+}
+
+.message {
+    width:90vw;
+    height:10vh;
+    margin:2vh auto;
+    background-color:white;
+    box-shadow: 0px 0px 19px 2px rgba(0,0,0,0.75);
+    border:1px solid gainsboro;
+}
+.mIcon {
+    float:left;
+    width:8vh;
+    height:8vh;
+    margin:1vh;
+    background-color:gainsboro;
+    border-radius:10px;
+    border:1px solid grey;
+}
+.mContent {
+    width:calc(90vw - 10vh - 20% - 2px);
+    height:10vh;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    float:left;
+}
+.mTitle {
+    display:inline-block;
+    margin-top:1vh;
+    font-size:6vw;
+}
+
+.messageStack {
+	position:relative;
+	box-shadow:
+    /* The top layer shadow */
+    0 1px 1px rgba(0,0,0,0.15),
+    /* The second layer */
+    0 10px 0 -5px #eee,
+    /* The second layer shadow */
+    0 10px 1px -4px rgba(0,0,0,0.15),
+     /* The third layer */
+    0 20px 0 -10px #eee,
+    /* The third layer shadow */
+    0 20px 1px -9px rgba(0,0,0,0.15) !important;
+	z-index:1;
+}
+.messageX {
+    float:left;
+    margin-top:0;
+    width:20%;
+    font-size:8vw;
+    text-align:center;
+    line-height:10vh;
+}
+
+.messageStack > .mssgContents .mCntntTxt {
+    position:absolute;
+	top:0;
+	left:1vw;
+	width:100%;
+	text-align:center;
+	font-size:5vw;
+	line-height:10vw;
+}
+.messageStack .message img {
+	display:none;
+}
+.messageStack .message {
+	position:relative;
+    box-sizing:border-box;
+	margin-top:calc(10vh + 20px);
+	display:none;
+    font-size:8vw;
+    padding-left:4vw;
+	margin-left:0 !important;
+}
+.messageStack .message ~ .message {
+	margin-top:0.5vw;
+}
+.messageStack .message {
+	text-align:left !important;
+}
+
+
+#noMessages {
+    display:inline-block;
+    background-color:white;
+    margin-top:1vh;
+    padding:2vw;
+    border-radius:5px;
+}
+
+.topMessage {
+    position:absolute;
+    top:-12vh !important;
+    left:5vw;
+    z-index:3;
+    margin:0;
+    animation-name:mssgUpDown;
+    animation-duration:6s;
+    animation-delay:1s;
+}
+@keyframes mssgUpDown {
+    10% {
+        top:2vh;
+    }
+    80% {
+        top:2vh;
+    }
+    90% {
+        top:-12vh;
+    }
+}
+.fullscreenMessage {
+    position:absolute;
+    display:none;
+    width:0;
+    height:0;
+    top:50vh;
+    left:50vw;
+    background: linear-gradient(-180deg, #BCC5CE 0%, #929EAD 98%), radial-gradient(at top left, rgba(255,255,255,0.30) 0%, rgba(0,0,0,0.30) 100%);
+    background-blend-mode: screen;
+    padding-top:20vh;
+    z-index:1000000000;
+    text-align:center;
+    transition:all 1s;
+}
+.fsmShow {
+    display:block;
+    width:100vw;
+    height:100vh;
+    top:0;
+    left:0;
+}
+.fullscreenMessage span {
+    font-size:5.5vw;
+}

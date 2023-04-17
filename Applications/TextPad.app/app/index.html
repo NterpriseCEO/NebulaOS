@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<link rel = "stylesheet" href = "../../../../public/css/materialize.min.css">
+    	<script src = "../../../../public/js/jquery.js"></script>
+    	<script src = "../../../../public/js/materialize.min.js"></script>
+    	<!--<link rel = "stylesheet" href="../../uiElementDefaults/ui.css">
+    	<link href = "css/index.css" rel="stylesheet">-->
+   		<script data-main = "js/index.js" src = "../../../../public/js/require2.3.2.js"></script>
+    	<style>
+        	nav {
+                height:11vh !important;
+            }
+            #edit {
+                position:absolute;
+                height:89vh;
+                top:11vh;
+                background-color:white;
+                font-size:2vw;
+                padding:1vw;
+                resize:none;
+            }
+            .nav-content {
+                padding-left:1vw;
+            }
+        </style>
+    </head>
+    <body oncontextmenu="return false;">
+        <div class = "navbar-fixed">
+            <nav>
+                <div class = "nav-wrapper white">
+                    <div class = "nav-content">
+                        <a class = "dropdown-trigger btn grey lighten-2 grey-text text-darken-4 z-depth-0" data-activates = "fileDropdown">File</a>
+                        <ul id = "fileDropdown" class = "dropdown-content">
+                            <li><a id = "newButton" href = "#!" class = "black-text">New</a></li>
+                            <li><a id = "saveButton" href = "#!" class = "black-text">Save</a></li>
+                            <li><a id = "loadButton" href = "#!" class = "black-text">Open</a></li>
+                        </ul>
+                        <!--<a id = "saveButton" class = "dMItem btn">Save</a>
+                        <a id = "loadButton" class = "dMItem btn">Open</a>-->
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <textarea id = "edit" wrap="off"></textarea>
+        <!--<div id = "editor">
+            <div id = "menuBar">
+                <div class = "topButton dropdownMenuBtn">
+                    <div class = "dDMenuTitle">File</div>
+                    <div class = "dropdownMenu blur">
+                        <div id = "saveButton" class = "dMItem">Save</div>
+                        <div id = "loadButton" class = "dMItem">Open</div>
+                    </div>
+                </div>
+            </div>
+            <textarea id = "edit" wrap="off"></textarea>
+        </div>-->
+    </body>
+</html>

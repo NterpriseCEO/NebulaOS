@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <link rel = "stylesheet" href = "http://localhost:8080/public/css/materialize.min.css" media="screen,projection">
+        <link rel = "stylesheet" href = "css/index.css">
+        <script src = "http://localhost:8080/public/js/require2.3.2.js" data-main="js/index.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body class = "grey lighten-5">
+        <div id = "eventCreator" class = "hide">
+            <div class = "navbar-fixed">
+                <nav>
+                    <div class = "nav-wrapper white">
+                        <div class = "nav-content">
+                            <div class = "row black-text">
+                                <div class = "col s11" data-text="newEvent"></div>
+                                <div class = "col s1 xButton">X</div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class = "container">
+                <br>
+                <div class = "input-field">
+                    <input id = "eTT" type = "text">
+                    <label for = "eTT" data-text = "eventTitle"></label>
+                </div>
+                <div class = "input-field">
+                    <textarea id = "eV" class = "materialize-textarea"></textarea>
+                    <label for "eV" data-text = "description"></label>
+                </div>
+                <span data-text = "chooseColour"></span>
+                <div class = "col s1">
+                    <select class = "browser-default">
+                        <option value = "" disabled slected data-text = "chooseTag"></option>
+                        <option value = "red" data-text = "red"></option>
+                        <option value = "orange" data-text = "orange"></option>
+                        <option value = "yellow" data-text = "yellow"></option>
+                        <option value = "green" data-text = "green"></option>
+                        <option value = "blue" data-text = "blue"></option>
+                        <option value = "purple" data-text = "purple"></option>
+                    </select>
+                </div><br>
+                <a id = "createEvent" class = "btn waves-effect blue" data-text = "saveEvent"></a>
+            </div>
+        </div>
+        <div id = "main">
+            <div id = "top" class = "row">
+                <div id = "prev" class = "col s3">
+                    <span><i class = "material-icons">chevron_left</i></span>
+                </div>
+                <div class = "col s6">
+                    <span id = "label" class = "blue-text darken-1">Mar 2018</span>
+                </div>
+                <div id = "next" class = "col s3">
+                    <span><i class = "material-icons">chevron_right</i></span>
+                </div>
+            </div>
+            <div id = "dates" class = "row">
+                <div class = "col day">S</div>
+                <div class = "col day">M</div>
+                <div class = "col day">T</div>
+                <div class = "col day">W</div>
+                <div class = "col day">T</div>
+                <div class = "col day">F</div>
+                <div class = "col day">S</div>
+            </div>
+            <div class  = "curr">
+            </div>
+        </div>
+
+        <div id = "dayPage" class = "center-align blue">
+            <!--<div class = "navbar-fixed">
+                <nav>
+                    <div class = "nav-wrapper white">
+                        <div class = "nav-content">
+                            <div class = "row black-text">
+                                <div id = "date" class = "col s11">Date</div>
+                                <div class = "col s1 xButton">X</div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>-->
+            <br>
+            <h3 class = "white-text" data-text = "events"></h3><br>
+            <a id = "newBttn" class = "btn waves-effect white black-text" data-text = "createNewEvent"></a>
+            <a id = "editBttn" class = "btn waves-effect hide white black-text"data-text = "editEvent"></a>
+            <div id = "events" class = "row">
+                <div class = "col s8 offset-s2">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

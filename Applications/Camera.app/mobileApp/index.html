@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <link rel = "stylesheet" href = "http://localhost:8080/public/css/materialize.min.css" media="screen,projection">
+        <link rel = "stylesheet" href = "css/index.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src = "http://localhost:8080/public/js/require2.3.2.js" data-main="js/index.js"></script>
+    </head>
+    <body>
+        <video id="camera" autoplay></video>
+        <canvas id = "snapshot" class = "hide"></canvas>
+        <div class  = "flash"></div>
+        <div class = "fixed-floating-btn center-align">
+            <a id = "record" class = "btn-floating btn-large grey darken-4 white"><i class = "large material-icons red-text">fiber_manual_record</i></a>
+            <a id = "snap" class = "btn-floating btn-large grey"><i class = "material-icons">photo_camera</i></a>
+            <a id = "images" class = "btn-floating btn-large white"><i class = "material-icons black-text">image</i></a>
+        </div>
+        <select id = "videoSource" class = "hide"></select>
+        <select id = "audioSource" class = "hide"></select>
+    </body>
+</html>

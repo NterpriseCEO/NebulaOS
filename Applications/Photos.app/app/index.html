@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <link rel = "stylesheet" href = "../../../../public/css/materialize.min.css" media="screen,projection">
+        <link rel = "stylesheet" href = "css/index.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+        <script src = "../../../../public/js/require2.3.2.js" data-main="js/index.js"></script>
+    </head>
+    <body>
+        <div id = "mainPage">
+            <div class = "navbar-fixed">
+                <nav class = "white">
+                    <div class = "navbar-wrapper">
+                        <div class = "navbar-content">
+                            <ul class = "tabs fixed">
+                                <li class = "tab s6"><a href = "#images" data-text = "images"></a></li>
+                                <li class = "tab s6"><a href = "#videos" data-text = "videos"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div id = "images" class = "col s12"></div>
+            <div id = "videos" class = "col s12"></div>
+        </div>
+        <div id = "imagesPane" class = "pane s12 black hide">
+            <div class = "paneHeader white row s12 z-depth-1">
+                <div class = "back left"><i class = "material-icons medium">arrow_back</i></div>
+                <a href ="#bottomMenu" class = "right modal-trigger"><i class = "material-icons medium black-text">more_vert</i></a>
+                <a id = "cancel" class = "btn-large grey hide" data-text = "cancel"></a>
+                <a id = "save" class = "btn-large grey right hide" data-text = "save"></a>
+            </div>
+            <canvas id = "canvas" class = "hide grey"></canvas>
+            <div id = "filters" class = "row s12 hide">
+                <div class = "filter grey col s3" data-value = "grayscale" data-text = "greyscale"></div>
+                <div class = "filter orange lighten-3 col s3" data-value = "sepia" data-text = "sepia"></div>
+                <div class = "filter white col s3" data-value = "brightness" data-text = "brightness"></div>
+                <div class = "filter blue-grey col s3" data-value = "contrast" data-text = "contrast"></div>
+            </div>
+            <div id = "imageSwiper" class = "swiper-container">
+                <div class = "swiper-wrapper">
+                </div>
+            </div>
+        </div>
+        <div id = "videosPane" class = "pane s12 black hide">
+            <div class = "paneHeader white row s12 z-depth-1">
+                <div class = "back left"><i class = "material-icons medium">arrow_back</i></div>
+                <a href ="#bottomMenu" class = "right modal-trigger"><i class = "material-icons medium black-text">more_vert</i></a>
+            </div>
+            <div id = "videoSwiper" class = "swiper-container">
+                <div class = "swiper-wrapper">
+                </div>
+            </div>
+        </div>
+        <div id = "close" class = "hide"><i class = "material-icons">close</i></div>
+        <div id = "bottomMenu" class = "modal bottom-sheet">
+            <div class = "modal-content">
+                <div class = "row">
+                    <div class = "col s10"><h4 id = "name" class = "truncate" spellcheck="false"></h4></div>
+                    <div id = "bMRename" class = "col s2"><i class = "material-icons">edit</i></div>
+                </div>
+                <div id = "bMDelete" class = "row valign-wrapper">
+                    <div class = "col s2"><i class = "material-icons">delete</i></div>
+                    <div class = "col s10" data-text = "delete"></div>
+                </div>
+                <div class = "row valign-wrapper">
+                    <div class = "col s2"><i class = "material-icons">edit</i></div>
+                    <div id = "bMEdit" class = "col s10" data-text = "edit"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

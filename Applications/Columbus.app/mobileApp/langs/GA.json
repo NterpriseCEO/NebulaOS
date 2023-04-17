@@ -1,0 +1,20 @@
+{
+    "folders":"Fillteáin",
+    "save":"Sábháil",
+    "open":"Oscail",
+    "current":"- reatha",
+    "newFile":"Comhad Nua",
+    "newFolder":"Fillteán Nua",
+    "paste":"Greamaigh",
+    "emptier":"Tá mé níos folamh ná do chuntas bainc!",
+    "copy":"Cóipeáil",
+    "cut":"Gearr",
+    "delete":"Scrios",
+    "cancel":"Cealaigh",
+    "folder":"Roghnaigh ainm an fillteán",
+    "file":"Roghnaigh ainm an comhad",
+    "alphanumeric":"Ach amháin alfa-uimhriúil agus ponccanna le do thoil",
+    "wishToDelete":"Ar mhaith leat é seo a scriosadh?",
+    "chooseNewName":"Roghnaigh ainm nua",
+    "rename":"Athainmnigh"
+}

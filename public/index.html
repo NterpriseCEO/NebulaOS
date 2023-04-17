@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta http-Equiv="Cache-Control" Content="no-cache" />
+		<meta http-Equiv="Pragma" Content="no-cache" />
+        <meta http-Equiv="Expires" Content="0"/>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel = "stylesheet" href="uiElementDefaults/ui.css">
+        <link rel = "stylesheet" href="css/materialize.min.css">
+        <link rel = "stylesheet" href="css/desktop.css">
+        <link rel = "stylesheet" href="css/InfoPane.css">
+        <link rel = "stylesheet" href="css/taskbar.css">
+        <link rel = "stylesheet" href="css/applications.css">
+        <link rel = "stylesheet" href="css/login.css">
+        <!--<link rel = "stylesheet" href="css/alert.css">-->
+        <link rel="stylesheet" type="text/css" href="css/jquery.ui.resizable.css">
+        <noscript>You browser does not support javascript or it may disabled. Enable it!</noscript>
+    </head>
+    <!--oncontextmenu="return false;"-->
+    <!--File icons created by SmashIcons-->
+    <body id = "body" oncontextmenu="return false;">
+        <div id = "openWithModal" class = "modal fixed-footer">
+        	<div class = "modal-content">
+                <h4>Open With</h4>
+                <ul id = "modalCollection" class = "collection">
+                </ul>
+            </div>
+            <div class = "modal-footer">
+                <a id = "closeModal" class = " modal-close btn-flat red-text">Cancel</a>
+  			</div>
+        </div>
+        <div id = "messageCenter" class = "blur">
+            <div id = "mssgCntrTop">
+                <div id = "mssgX">X</div>
+                <div id = "messageTtl">Messages</div>
+            </div>
+            <div id = "userIcon"></div>
+            <span id = "usernameDisplay"></span>
+            <div class = "row s2">
+                <a id = "logOut" class = "btn blue">Logout</a>
+            </div>
+            <div id = "messages">
+                <div id = "noMessages">You have no new messages!</div>
+                <!--<div class="message" data-app="MarathonMessenger">
+                    <div class="mssgIconW">
+                        <img src="Applications/MarathonMessenger.app/images/icon.png" width="100%">
+                    </div>
+                    <div class="mssgContents">
+                        <div class="mssgAppName">MarathonMessenger - test</div>
+                        <div class="mssg">Hello Dude!</div>
+                    </div>
+                    <div class="mssgRX">X</div>
+                </div>-->
+            </div>
+        </div>
+        <div id = "disableBox"></div>
+        <div id = "searchWrap">
+            <div id = "searchBar" class = "blur">
+                <input id = "searchBox" type = "text" placeholder="Search" spellcheck="false">
+            </div>
+            <div id = "searchResults" class = "blur">
+                <div id = "resultsSide">
+                    <div id = "fileResults">
+                        <span class = "resultsHeader">Files</span>
+                        <!--<div id = "loadFiles" class = "flatBB">Load Files</div>-->
+                    </div>
+                    <div id = "results">
+                        <span class = "resultsHeader">Apps</span>
+                    </div>
+                </div>
+                <div id = "infoSide"></div>
+            </div>
+        </div>
+        <div id = "tabs">
+            <a id = "showApps" class = "btn-large right hide">Open Apps</a>
+            <div class = "row">
+            </div>
+        </div>
+        <div id = "os">
+            <div id = "percent"></div>
+            <div id = "gkgmk">
+                <div id = "loginWrap" class = "blur">
+                    <span id = "lTitle">Login</span>
+                    <div class = "col s12">
+                        <input id = "username-type" class="loginType lct browser-default" type = "text" placeholder="Username" spellcheck="false">
+                    </div>
+                    <div class = "col s12">
+                        <input id = "password-type" class="loginType lct browser-default" type = "password" placeholder="Password" spellcheck="false">
+                    </div>
+                    <div class = "col s12">
+                        <input id = "signCode-type" class="loginType browser-default" type = "text" placeholder="Sign up code" spellcheck="false">
+                    </div>
+                    <div class = "row">
+                        <div class = "col s6">
+                            <a id = "signUp" class = "btn-large blue">Sign Up</a>
+                        </div>
+                        <div class = "col s6">
+                            <a id = "login" class = "btn-large green">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id = "frameAsWhole">
+                <div class ="item-frame" style = "position:absolute">
+                    <div class = "box1">
+                        <div class = "iPane blur">
+                        </div>
+                        <div class = "infoPane iPane">
+                            <div id = "time"></div>
+                            <div id = "batteryPane">
+                                <div id = "bName">%</div>
+                                <div id = "battery" class = "buttonG"></div>
+                            </div>
+                            <div id = "mssgCntr">
+                                <div id = "hasMessage"></div>
+                            </div>
+                            <div class = "iFWrap">
+                                <div id = "inFolderMenu">
+                                    <div class = "folderSelectBttn fsbv flatBB">Applications</div>
+                                    <div id = "others">
+                                        <div class = "folderSelectBttn fsbh blur flatBB" data-folderNum = "1">Desktop</div>
+                                        <div class = "folderSelectBttn fsbh blur flatBB" data-folderNum = "2">Documents</div>
+                                        <div class = "folderSelectBttn fsbh blur flatBB" data-folderNum = "3">Images/Videos</div>
+                                        <div class = "folderSelectBttn fsbh blur flatBB" data-folderNum = "4">Music</div>
+                                        <div class = "folderSelectBttn fsbh blur flatBB" data-folderNum = "5">Applications</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id = "search"></div>
+                        </div>
+                        <div class = "desktop-box">
+                            <div id = "data-holder">
+                                <div id = "data">
+                                    <div class = "Desktop folder-view" data-Folder-Name="Desktop" data-Link-P="1" data-original="me">
+                                        <div class = "table1 folderTable"></div>
+                                    </div>
+                                    <div class = "Documents folder-view" data-Folder-Name="Documents" data-Link-P="2" data-original="me">
+                                        <div class = "table2 folderTable"></div>
+                                    </div>
+                                    <div class = "Images_Videos folder-view" data-Folder-Name="Images_Video" data-Link-P="3" data-original="me">
+                                        <div class = "table3 folderTable"></div>
+                                    </div>
+                                    <div class = "Music folder-view" data-Folder-Name="Music" data-Link-P="4" data-original="me">
+                                        <div class = "table4 folderTable"></div>
+                                    </div>
+                                    <div class = "Applications folder-view" data-Folder-Name="Applications" data-Link-P="5" data-original="me">
+                                        <div class = "table5 folderTable"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id = "newestMessages">
+                            <!--<div class="message" data-app="MarathonMessenger">
+                                <div class="mssgIconW">
+                                    <img src="../Applications/MarathonMessenger.app/images/icon.png" width="100%">
+                                </div>
+                                <div class="mssgContents">
+                                    <div class="mssgAppName">MarathonMessenger - test</div>
+                                    <div class="mssg">Hello Dude!</div>
+                                </div>
+                                <div class="mssgRX">X</div>
+                            </div>
+                            <div class="message" data-app="MarathonMessenger">
+                                <div class="mssgIconW">
+                                    <img src="../Applications/MarathonMessenger.app/images/icon.png" width="100%">
+                                </div>
+                                <div class="mssgContents">
+                                    <div class="mssgAppName">MarathonMessenger - test</div>
+                                    <div class="mssg">Hello Dude!</div>
+                                </div>
+                                <div class="mssgRX">X</div>
+                            </div>
+                            <div class="message" data-app="MarathonMessenger">
+                                <div class="mssgIconW">
+                                    <img src="../Applications/MarathonMessenger.app/images/icon.png" width="100%">
+                                </div>
+                                <div class="mssgContents">
+                                    <div class="mssgAppName">MarathonMessenger - test</div>
+                                    <div class="mssg">Hello Dude!</div>
+                                </div>
+                                <div class="mssgRX">X</div>
+                            </div>
+                            <div class="message" data-app="MarathonMessenger">
+                                <div class="mssgIconW">
+                                    <img src="../Applications/MarathonMessenger.app/images/icon.png" width="100%">
+                                </div>
+                                <div class="mssgContents">
+                                    <div class="mssgAppName">MarathonMessenger - test</div>
+                                    <div class="mssg">Hello Dude!</div>
+                                </div>
+                                <div class="mssgRX">X</div>
+                            </div>-->
+                        </div>
+                        <div class = "taskbar-wrap blur">
+                            <div class = "taskbar">
+                                <div id = "taskbarItems">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script data-main = "js/index.js" src = "js/require2.3.2.js"></script>
+    </body>
+</html>

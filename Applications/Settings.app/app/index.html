@@ -1,0 +1,270 @@
+<html>
+    <head>
+        <!--<link type="text/css" rel = "stylesheet" href="../../uiElementDefaults/ui.css">-->
+        <link type="text/css" rel = "stylesheet" href="css/index.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel = "stylesheet" href = "../../../../public/css/materialize.min.css">
+        <script data-main = "js/index.js" src = "../../../../public/js/require2.3.2.js"></script>
+    </head>
+    <body oncontextmenu="return false;" class = "grey lighten-4">
+        <div id = "mainPage" class = "content">
+            <div class = "row">
+                <div class = "col s6">
+                    <div class = "card">
+                        <div class = "card-image">
+                            <img src = "../images/placeholderImage.png">
+                        </div>
+                        <div class = "card-action">
+                            <a href = "#!" data-link="1" data-text = "changeWallaper"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class = "col s6">
+                    <div class = "card">
+                        <div class = "card-image">
+                            <img src = "../images/userIcon.png">
+                        </div>
+                        <div class = "card-action">
+                            <a href = "#!" data-link = "2" data-text = "account"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col s6">
+                    <div class = "card">
+                        <div class = "card-image">
+                            <img src = "../images/bell.png">
+                        </div>
+                        <div class = "card-action">
+                            <a href = "#!" data-link = "3" data-text = "notifications"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class = "col s6">
+                    <div class = "card">
+                        <div class = "card-image">
+                            <img src = "../images/translate.png">
+                        </div>
+                        <div class = "card-action">
+                            <a href = "#!" data-link = "4" data-text = "changeLanguage"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "page hide" data-link = "1">
+            <div class = "navbar-fixed">
+                <nav>
+                    <div class = "nav-wrapper white">
+                        <div class = "nav-content row black-text">
+                            <div class = "col s2 xButton"><i class = "material-icons">close</i></div>
+                            <div class = "col s10">
+                                <span class = "brand-logo black-text" data-text = "wallpaper"></a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class = "container">
+                <div class = "card">
+                    <div class = "card-content">
+                        <span class = "card-title" data-text = "colour"></span>
+                        <div class = "row">
+                            <div class = "col s10" data-text = "chooseColour"></div>
+                            <div class = "col s2">
+                                <input type = "color" id = "colorChoice" title = "Chose Colour">
+                            </div>
+                        </div>
+                        <div class = "row">
+                            <div class = "col s9" data-text = "keepBGImage"></div>
+                            <div class = "col s3">
+                                <div class = "switch">
+                                    <label>
+                                        <input id = "keepBackground" type = "checkbox">
+                                        <span class = "lever"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card">
+                    <div class = "card-content">
+                        <span class = "card-title" data-text = "image"></span>
+                        <div class = "row">
+                            <div class = "col s7" data-text = "fromNebula"></div>
+                            <div class = "col s5"><a id = "imageChoice" class = "btn blue" data-text = "select"></a></div>
+                        </div>
+                        <div class = "row">
+                            <div class = "col s7" data-text = "fromDesktop"></div>
+                            <div class = "col s5">
+                                <input type = "file" id = "imageChoice2" accept="image/gif, image/jpeg, image/png">
+                                <label for = "imageChoice2" class = "btn blue" data-text = "select"></label>
+                            </div>
+                        </div>
+                        <div class = "row">
+                            <div class = "col s7" data-text = "size"></div>
+                            <div class = "col s5">
+                                <select id = "bgSize" class = "browser-default z-depth-1">
+                                    <option value="cover" data-text = "cover"></option>
+                                    <option value="contain" data-text = "contain"></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class = "row">
+                            <div class = "col s7" data-text = "repeat"></div>
+                            <div class = "col s5">
+                                <select id = "bgRepeat" class = "browser-default z-depth-1">
+                                    <option value="repeat" data-text = "repeat"></option>
+                                    <option value="no-repeat" data-text = "noRepeat"></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class = "row">
+                            <div class = "col s9" data-text = "keepColour"></div>
+                            <div class = "col s3">
+                                <div class = "switch">
+                                    <label>
+                                        <input id = "keepColor" type = "checkbox">
+                                        <span class = "lever"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "row">
+                            <div class = "col s12">
+                                <div id = "imagePreview"></div>
+                            </div>
+                        </div>
+                        <div class = "row">
+                            <div class = "col s7"></div>
+                            <div class = "col s5"><a id = "changeImg" class = "btn blue hide" data-text = "change"></a></div>
+                        </div>
+                        <div class = "row">
+                            <div class = "col s9" data-text = "randomBackground"></div>
+                            <div class = "col s3">
+                                <div class = "switch">
+                                    <label>
+                                        <input id = "randBG" type = "checkbox">
+                                        <span class = "lever"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "page hide" data-link="2">
+            <div class = "navbar-fixed">
+                <nav>
+                    <div class = "nav-wrapper white">
+                        <div class = "nav-content row black-text">
+                            <div class = "col s2 xButton"><i class = "material-icons">close</i></div>
+                            <div class = "col s10">
+                                <span class = "brand-logo black-text" data-text = "account"></span>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class = "container">
+                <div class = "card">
+                    <div class = "card-content">
+                        <div class = "card-title" data-text = "changeAvatar"></div>
+                        <div class = "row">
+                            <div class = "col s12">
+                                <div id = "avatarImg"></div>
+                            </div>
+                        </div>
+                        <div class = "row">
+                            <div class = "col s5">
+                                <a id = "avatarChoice" class = "btn blue">Nebula</a>
+                            </div>
+                            <div class = "col s5">
+                                <input type ="file" id = "avatarChoice2" accept="image/gif, image/jpeg, image/png">
+                                <label for = "avatarChoice2" class = "btn blue" data-text = "computer"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class = "card">
+                    <div class = "card-content">
+                        <span class = "card-title" data-text = "accountInfo"></span>
+                        <div class = "row">
+                            <div class = "col s12">
+                                <input id = "nickname" type = "text" placeholder= "Nickname">
+                                <a id = "change" class = "btn blue" data-text = "change"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "page hide" data-link = "3">
+            <div class = "navbar-fixed">
+                <nav>
+                    <div class = "nav-wrapper white">
+                        <div class = "nav-content row black-text">
+                            <div class = "col s2 xButton"><i class = "material-icons">close</i></div>
+                            <div class = "col s10">
+                                <span class = "brand-logo black-text" data-text = "notifications"></span>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class = "container">
+                <div class = "card">
+                    <div class = "card-content">
+                        <span class = "card-title" data-text = "disable_enable"></span>
+                        <div class = "row">
+                            <div class = "switch">
+                                <div class = "col s9" data-text = "requiresRestart"></div>
+                                <div class = "col s3">
+                                    <label>
+                                        <input id = "disableNotifs" type = "checkbox">
+                                        <span class = "lever"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div id = "notifications" class = "row">
+                            <div class = "col s12"><h5 data-text = "for"></h5></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "page hide" data-link = "4">
+            <div class = "navbar-fixed">
+                <nav>
+                    <div class = "nav-wrapper white">
+                        <div class = "nav-content row black-text">
+                            <div class = "col s2 xButton"><i class = "material-icons">close</i></div>
+                            <div class = "col s10">
+                                <span class = "brand-logo black-text" data-text = "languages"></span>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class = "container">
+                <div class = "card">
+                    <div class = "card-content">
+                        <span class = "card-title" data-text = "chooseLanguage"></span>
+                        <div class = "row">
+                            <select id = "chooseLanguage" class = "browser-default z-depth-1">
+                                <option value="EN">English</option>
+                                <option value="GA">Gaeilge</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,199 @@
+.ui-loader {
+    display:none !important;
+}
+* {
+    outline:none !important;
+}
+
+#menu .item {
+    font-size:5vw;
+}
+.topTtl {
+    text-align:center !important;
+    font-size:8vw !important;
+    padding:3vw !important;
+}
+#hButton {
+    visibility:hidden;
+}
+
+#navbar {
+    min-height:6.7vh !important;
+}
+
+#navbar .menu, #navbar .input {
+    width:25vw !important;
+}
+#navbar .menu {
+    margin-left:17vw !important;
+}
+
+.ui.selection.dropdown {
+    min-width:23vw !important;
+}
+span.ui.dropdown, .ui-selectmenu-text {
+    display:none;
+}
+
+.dropdown-trigger {
+    font-size:10vw !important;
+}
+
+.withAddon {
+    height:69vh !important;
+    overflow-y:auto !important;
+}
+
+#folderTop {
+    position:fixed;
+    width:100vw;
+    height:50vh;
+}
+#headerFolder {
+    margin-top:5vh;
+    margin-left:25%;
+}
+#headerTitle {
+    display:inline-block;
+    width:100vw;
+    font-size:10vw;
+    text-align:center;
+}
+
+.emptyFolder {
+    margin-top:50vh;
+}
+
+#navbar {
+    position:fixed;
+    top:0;
+    width:100%;
+    height:10vh;
+    z-index:5;
+    transition:1s border-bottom;
+}
+.border {
+    border-bottom:1px solid grey;
+}
+
+#menuBtn, #dropdownBtn {
+    position:absolute;
+    left:2vw;
+}
+#dropdownBtn {
+    position:static;
+    margin-top:1vh;
+}
+
+#cancelSearch {
+    position:absolute;
+    right:2vw;
+    top:1vh;
+}
+
+#menuBtn i, #cancelSearch i {
+    font-size:15vw;
+}
+#dropdownBtn i, #cancelSearch i {
+    font-size:12vw;
+}
+
+#searchBox {
+    height:100%;
+    width:100%;
+    padding-left:2vw;
+    font-size:6vw;
+}
+#cancelSearch {
+    z-index:10;
+}
+
+.fold {
+    box-shadow: 0px -10px 29px 0px rgba(0,0,0,0.22);
+    top:50vh;
+}
+
+.fileFolder {
+    height:20vw;
+}
+.selectedFile {
+    background-color:rgb(220,220,220);
+}
+.fileFolder .icon {
+    float:left;
+    width:15vw;
+    height:15vw;
+    margin-left:2.5vw;
+    background-size:100% 100%;
+    transition:0.4s margin-left;
+    background-image:url("../../../../public/images/file.png");
+}
+.lIcon {
+    width:100%;
+    height:100%;
+    background-size:100% 100%;
+}
+.folderIcon {
+    background-image:url("../../../../public/images/fileFolder.png") !important;
+}
+.appIcon {
+    background-image:url("../../../../public/images/appFolder.png") !important;
+}
+#newFileFolder-button > span {
+    display:none;
+}
+.ffName {
+    float:left;
+    overflow:hidden;
+    width:55vw;
+    height:100%;
+    margin-left:3vw;
+    font-size:8vw;
+    line-height:20vw;
+    text-overflow:ellipsis;
+    box-sizing:border-box;
+    transition:0.4s margin-left;
+}
+.mLeft {
+    margin-left:-10vw !important;
+}
+.ffName.mLeft {
+    margin-left:0 !important;
+}
+
+.fMenu {
+    float:right;
+    line-height:18vw;
+}
+.fMenu i {
+    font-size:12.5vw;
+}
+
+.deleteFF {
+    position:absolute;
+    display:none;
+    height:15vw;
+    right:0;
+    color:rgb(80,0,0);
+    background-color:red;
+    line-height:25vw;
+    font-size:6vw;
+    text-align:center;
+    z-index:1;
+}
+
+#addon {
+    display:none;
+    position:fixed;
+    width:100%;
+    height:auto;
+    background-color:white;
+    bottom:0;
+    padding:2vh;
+    font-size:8vw;
+}
+
+#bottomMenu {
+    height:38vh;
+    overflow:hidden;
+}

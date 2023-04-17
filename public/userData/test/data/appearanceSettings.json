@@ -1,0 +1,11 @@
+{
+  "image": [
+    {
+      "image": "none",
+      "bgRepeat": "no-repeat",
+      "bgSize": "cover",
+      "randomBG": true
+    }
+  ],
+  "bgColor": "rgba(0, 0, 0, 0)"
+}

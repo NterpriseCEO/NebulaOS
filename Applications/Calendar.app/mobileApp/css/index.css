@@ -1,0 +1,73 @@
+html {
+    //background-color:#FFFAF0;
+    margin-bottom:0 !important;
+}
+#label {
+    text-align:center;
+     white-space: nowrap;
+}
+#main {
+    padding-bottom:2vw;
+}
+.s6 {
+    margin-left:0 !important;
+    padding:0 !important;
+}
+#top {
+    font-size:8vw;
+    line-height:8vw;
+    text-align:center;
+    margin-bottom:0;
+    padding:8vw;
+}
+.row {
+    font-weight:bold;
+}
+.row,.calCol {
+    text-align:center;
+}
+.calRow {
+    margin-bottom:0;
+}
+.calCol, .day {
+    border-radius:100%;
+    width:calc(100vw / 7);
+    box-sizing:border-box;
+}
+.selected {
+    background-color:gainsboro;
+}
+#main {
+    position:fixed;
+    top:0;
+    z-index:-1;
+}
+#dates {
+    margin-bottom:0 !important;
+}
+#dayPage {
+    margin-bottom:0 !important;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    box-shadow: 0px 10px 23px 10px rgba(0,0,0,0.5);
+}
+h3 {
+    margin:0;
+    padding:0;
+}
+#eventCreator {
+    position:fixed;
+    top:0;
+    width:100vw;
+    height:100vh;
+    background-color:white;
+    text-align:center;
+    z-index:998;
+}
+#events {
+    margin-top:1vh;
+    margin-bottom:0;
+}
+.card {
+    text-align:left;
+}

@@ -1,0 +1,167 @@
+body {
+    user-select:none;
+}
+i.medium {
+    font-size:3rem !important;
+}
+#uAppIcon {
+    width:15vw;
+    height:15vw;
+    margin-top:3vw;
+    border:1px solid grey;
+    border-radius:15px;
+    cursor:pointer;
+}
+#images {
+    width:100%;
+    height:40vh;
+    border:1px solid grey;
+}
+#addImagePane {
+    display:inline-block;
+    width:25vh;
+    height:100%;
+    border-right:1px solid grey;
+    line-height:40vh;
+    padding-left:8vh;
+}
+#addedImages {
+    float:right;
+    overflow-x:auto;
+    overflow-y:hidden;
+    width:calc(100% - 25vh);
+    height:100%;
+    white-space:nowrap;
+}
+.addedImage {
+    display:inline-block;
+    width:calc(25vh - 1vw);
+    height:calc(100% - 2vw);
+    margin:1vw 0.5vw;
+    border:1px solid grey;
+}
+
+#userIcon {
+    width:10vw;
+    height:10vw;
+    cursor:pointer;
+}
+
+@media only screen and (max-width: 800px) {
+    .appIconSml {
+        width:10vw !important;
+        height:10vw !important;
+    }
+    .nav-content .s7 {
+        width:calc(((100vw / 12) * 7) - 6rem) !important;
+        height:100%;
+    }
+    .nav-wrapper .input-field input {
+        width:25vw !important;
+    }
+    input::placeholder {
+        color:black;
+    }
+    .s7 {
+        width:40% !important;
+    }
+    .brand-logo {
+        left:40% !important;
+    }
+    .input-field {
+        width:43% !important;
+    }
+
+    .s6, .s8 {
+        margin-left:5% !important;
+        width:90% !important;
+    }
+    .s4{
+        float:left;
+        width:30% !important;
+    }
+    #userIcon {
+        width:15vw;
+        height:15vw;
+    }
+    .s6 .s8 {
+        width:65% !important;
+    }
+    #newAppPane .s8:not(.input-field) {
+        width:60% !important;
+    }
+    #newAppPane .s8 .card-title {
+        display:inline-block;
+        margin-left:-4vw !important;
+    }
+    #newAppPane .card .s3 {
+        width:30%;
+    }
+    #newAppPane .card .s3.offset-s6 {
+        margin-left:40%;
+    }
+
+    #appPane {
+        width:90vw !important;
+        left:5vw !important;
+    }
+    #fixedClose {
+        width:85vw !important;
+    }
+    .offset-s2 {
+        margin-left:0;
+    }
+}
+
+@media (hover:none) {
+    .offset-s1,.offset-s2,.offset-s3 {
+        width:100% !important;
+        margin-left:0 !important;
+    }
+    #settingsPane .card {
+        text-align:center;
+    }
+    #iconWrapper {
+        margin-left:0 !important;
+        padding:0 !important;
+        width:100% !important;
+    }
+    #userIcon {
+        width:30vw;
+        height:30vw;
+    }
+    .s8 {
+        width:100% !important;
+    }
+    .offset-s6 {
+        width:50% !important;
+        margin-left:0 !important;
+    }
+    .s2 {
+        width:22vw !important;
+        height:22vw !important;
+        padding:1vw;
+    }
+    .appWTitle ,.appIconSml{
+        width:20vw !important;
+        height:20vw !important;
+    }
+    #appPane {
+        top:0 !important;
+        left:0 !important;
+        width:100% !important;
+        height:100% !important;
+    }
+    #fixedClose {
+        width:100vw !important;
+    }
+    #cAppIcon {
+        width:40%;
+    }
+    .s9 {
+        width:60% !important;
+    }
+    #appTtl {
+        font-size:6vw !important;
+    }
+}

@@ -1,0 +1,128 @@
+body {
+    pointer-events:none;
+}
+body * {
+    pointer-events:all;
+}
+.upScreen {
+    bottom:20vh !important;
+}
+#images .row, #videos .row {
+    margin-top:4vh;
+}
+.col {
+    margin-bottom:4vw;
+}
+.s6:empty {
+    display:none;
+}
+.tabs .tab a{
+    color:grey;
+}
+.tabs .tab a.active {
+    color:dodgerblue;
+}
+
+.tabs .indicator {
+    background-color:dodgerblue;
+}
+#mainPage {
+    position:absolute;
+    z-index:-1;
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+    width:100vw !important;
+}
+img,video {
+    vertical-align:middle;
+}
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+canvas {
+    position:absolute;
+    display:inline-block;
+    z-index:2;
+}
+#filters {
+    position:absolute;
+    bottom:0;
+    padding:0;
+    margin:0;
+    z-index:3;
+}
+.filter {
+    height:25vw;
+    padding:0;
+    margin:0;
+}
+
+
+/***********************/
+.pane {
+    height:100vh;
+    z-index:998;
+}
+#imagesPane .row {
+    width:100vw;
+    overflow:hidden !important;
+}
+
+#videosPane .valign-wrapper {
+    overflow-x:scroll;
+}
+
+.modal {
+    height:35vh;
+}
+.modal .modal-content {
+    padding:15px !important;
+}
+h3 ,.col.s10, .col.s2{
+    margin:0;
+}
+.modal-content .row ,.modal .row .col{
+    padding:0 !important;
+}
+.modal .col {
+    //font-size:6vw !important;
+}
+.modal i {
+    font-size:10vw;
+}
+
+.pane img {
+    display:inline-block;
+    object-fit:contain;
+    object-position:center center !important;
+    margin:auto;
+    width:100vw;
+    line-height:100vh;
+}
+
+.paneHeader {
+    position:fixed;
+    width:100vw;
+    height:10vh;
+    z-index:3;
+}
+
+.noScroll {
+    overflow-y:hidden;
+}
+.ui-page-active {
+    outline:none !important;
+}
+.ui-loader {
+    display:none !important;
+}
+
+h4:focus {
+    outline:none;
+    border-bottom:1px solid dodgerblue;
+}

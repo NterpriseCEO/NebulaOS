@@ -1,0 +1,18 @@
+{
+    "newEvent":"Ócáid",
+    "eventTitle":"Tideal den Ócáid",
+    "description":"Cur Síos",
+    "chooseColour":"Roghnaigh Dath",
+    "chooseTag":"Roghnaigh Clib Dath",
+    "red":"Dearg",
+    "orange":"Óráiste",
+    "yellow":"Buí",
+    "green":"Glas",
+    "blue":"Gorm",
+    "purple":"Corcra",
+    "saveEvent":"Sábháil An Ócáid",
+    "events":"Ócáidí",
+    "createNewEvent":"Cruthaigh Ócáid Nua",
+    "editEvent":"Chuir An Ócáid in Eagar",
+    "deleteEvent":"Scrios Amach An Ócáid"
+}

@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <style>
+            body{
+                font-size:10vw;
+                unicode-bidi:bidi-override;
+                direction:rtl;
+                text-align:center;
+                padding:100px;
+                color:gold;
+            }
+            body > span {
+                display:inline-block;
+                position:relative;
+            }
+            body > span:hover,
+            body > span:hover ~ span {
+                color:transparent;
+            }
+            body > span:hover:before,
+            body > span:hover ~ span:before {
+                content:"\2605";
+                position:absolute;
+                left:0;
+                color:gold;
+            }
+        </style>
+    </head>
+    <body>
+        <span>&#9734;</span>
+        <span>&#9734;</span>
+        <span>&#9734;</span>
+        <span>&#9734;</span>
+        <span>&#9734;</span>
+    </body>
+</html>

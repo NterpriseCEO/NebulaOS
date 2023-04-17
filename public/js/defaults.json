@@ -1,0 +1,18 @@
+{
+  ".txt":[".txt","../Applications/TextPad.app/"],
+  ".png":[".png","../Applications/Paint.app/","../Applications/NebulaMediaPlayer.app/"],
+  ".css":[".css","../Applications/TextPad.app/"],
+  ".docx":[".docx","../Applications/NebulaEditor.app/"],
+  ".html":[".html","../Applications/TextPad.app/"],
+  ".java":[".java","../Applications/TextPad.app/"],
+  ".jpg":[".jpg","../Applications/Paint.app/","../Applications/NebulaMediaPlayer.app/"],
+  ".mov":[".mov","../Applications/NebulaMediaPlayer.app/"],
+  ".mp3":[".mp3","../Applications/TextPad.app/"],
+  ".mp4":[".mp4","../Applications/NebulaMediaPlayer.app/"],
+  ".webm":[".webm","../Applications/NebulaMediaPlayer.app/"],
+  ".php":[".php","../Applications/TextPad.app/"],
+  ".ruby":[".ruby","../Applications/TextPad.app/"],
+  ".svg":[".svg","../Applications/TextPad.app/"],
+  ".wav":[".wav","../Applications/TextPad.app/"],
+  ".zip":[".zip","../Applications/Columbus.app/"]
+}

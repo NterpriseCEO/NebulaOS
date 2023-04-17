@@ -1,0 +1,99 @@
+/* Basic reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	/* Better text styling */
+	font: bold 14px Arial, sans-serif;
+}
+
+/* Using box shadows to create 3D effects */
+#calculator {
+	width:100%;
+	height:100vh;
+	background-color:rgb(50,54,62);
+	border-radius:3px;
+	box-shadow:0px 4px #009de4, 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Inset shadow on the screen to create indent */
+.top .screen {
+	width: 100vw;
+	height: calc(100vh / 6);
+	color: white;
+	font-size: 15vw;
+	background-color:black;
+	padding-right:1%;
+	font-family:Courier;
+	line-height:calc(100vh / 6);
+	text-align: right;
+	letter-spacing: 1px;
+	white-space:nowrap;
+	font-weight:lighter;
+	overflow-y:hidden;
+	overflow-x:auto;
+}
+
+/* Clear floats */
+.keys {
+	position:absolute;
+	overflow:hidden;
+	top:calc((100vh / 6) * 2);
+}
+.keys {
+	height:80%;
+}
+/* Applying same to the keys */
+.keys span, .top span.clear {
+	float: left;
+	position: relative;
+	top: 0;
+
+	cursor: pointer;
+	width: 25vw;
+	height: calc(100vh / 6);
+	font-size:10vw;
+	background-color:#282c34;
+	line-height: 20vh;
+	text-align: center;
+	/* prevent selection of text inside keys */
+	user-select: none;
+	color:white;
+	font-weight:lighter;
+	/* Smoothing out hover and active states using css3 transitions */
+	transition: all 0.2s ease;
+}
+.clear {
+	position:fixed;
+}
+
+/* Remove right margins from operator keys */
+/* style different type of keys (operators/evaluate/clear) differently */
+.keys span.operator {
+	background-color:#282c34;
+	margin-right:0;
+	color:white;
+}
+.keys span.operator:hover {
+	background-color:orange;
+}
+
+.keys span.eval {
+	background-color:#282c34;
+	color:white;
+}
+
+/* Some hover effects */
+.keys span:hover {
+	background-color:rgb(60,174,255);
+}
+.top span.r:hover {
+	background-color:darkgrey;
+}
+
+.keys span.eval:hover {
+	background-color:orange;
+	box-shadow: 0px 4px #717a33;
+	color: #ffffff;
+}

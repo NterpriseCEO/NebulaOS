@@ -1,0 +1,150 @@
+/*#aTInfo {
+    width:99vw;
+    height:11vw;
+    margin-top:8vh;
+    margin-left:5vw;
+    padding:1vw;
+}*/
+#whatsHotPane .row, #appPane .row {
+    margin-top:2vw;
+}
+.appWTitle {
+    float:left;
+    width:8vw;
+    cursor:pointer;
+}
+.appIconSml {
+    float:left;
+    width:8vw;
+    height:8vw;
+    background-size:100% 100%;
+    border-radius:15px;
+}
+.appWTitle {
+    text-align:center;
+}
+
+#appPane {
+    position:absolute;
+    overflow-y:auto;
+    width:60vw;
+    height:90vh;
+    top:5vh;
+    left:20vw;
+    border-radius:5px;
+    z-index:1000;
+}
+#fixedClose {
+    position:fixed;
+    width:59vw;
+    z-index:1;
+}
+.card-content {
+    position:relative;
+    width:100%;
+}
+
+#closeAppPane {
+    position:absolute;
+    right:0;
+    cursor:pointer;
+}
+#appPane .col.s3 {
+    padding-left:0;
+}
+#apAppIcon {
+    width:100%;
+    margin-left:0;
+    border-radius:15px;
+    background-size:100% 100%;
+}
+#apAppIcon:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+#appTtl {
+    font-size:3vw;
+}
+#thumbs_up,#thumbs_down,#wishlist {
+    cursor:pointer;
+}
+#apAppImages {
+    overflow-x:auto;
+    overflow-y:hidden;
+    width:100%;
+    height:40vh;
+    white-space:nowrap;
+}
+#apAppImages img {
+    display:inline-block;
+    width:calc(25vh - 1vw);
+    height:calc(100% - 2vw);
+    margin:1vw 0.5vw;
+    border:1px solid grey;
+}
+#apAppImages img:first-child {
+    margin-left:0 !important;
+}
+/*#aPaneGrid {
+    margin-top:0;
+}
+#aPaneGrid h2 {
+    margin-bottom:0;
+}
+#dscrptn {
+    font-size:2vw;
+}
+/*.aIIcon {
+    float:left;
+    width:10vw;
+    height:10vw;
+    cursor:default;
+}
+#aPTitle {
+    float:left;
+    margin-left:1vw;
+    font-size:3vw;
+    line-height:3.3vw;
+}
+#aTD {
+    font-size:2vw;
+    line-height:2vw;
+}
+#strRtng {
+    float:left;
+    unicode-bidi:bidi-override;
+    direction:rtl;
+    display:inline-block;
+    color:gold;
+}
+#strRtng > span {
+    display:inline-block;
+    position:relative;
+}
+#strRtng > span:hover,
+#strRtng > span:hover ~ span {
+    color:transparent;
+}
+#strRtng > span:hover:before,
+#strRtng > span:hover ~ span:before {
+    content:"\2605";
+    position:absolute;
+    left:0;
+    color:gold;
+}
+
+#appDescription {
+    margin-top:1vw;
+    margin-left:5vw;
+}
+.aDTitle {
+    font-size:3vw;
+}
+#wtsHtPane {
+    padding-top:2vw;
+    padding-left:2vw;
+}
+#pTitle {
+    font-size:5vw;
+}*/

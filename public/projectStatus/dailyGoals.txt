@@ -1,0 +1,208 @@
+|---------------------02/04/18--------------------|
+|-------------------------------------------------|
+|-Timer done sound --
+|-Marathon bugfix - Undefined user -- Fixed?
+|-Opening message - Opened App not shown in task manager --
+|-Columbus - Open files in other Apps --
+|
+|-------------------------------------------------|
+|-Amount   - 4
+|-Amount Finished - 4
+|-Started  - 1:08am
+|-Finished - 2:20am
+|-Target   - 2:00am
+|
+|---------------------03/04/18--------------------|
+|-------------------------------------------------|
+|-Edit timer sound and loop it --
+|-TextPad app creation --
+|-Calendar events and event tags
+|
+|-------------------------------------------------|
+|-Amount   - 2
+|-Amount Finished - 2
+|-Started  - 2:20pm
+|-Finished - Unfinished (on that day)
+|-Target   - 6:00pm
+|
+|---------------------03/04/18--------------------|
+|-------------------------------------------------|
+|-Calendar events and event tags --
+|-Image Viewer
+|
+|-------------------------------------------------|
+|-Amount   - 7
+|-Amount Finished - 2
+|-Started  - 4:45pm
+|-Finished - Unfinished
+|-Target   - 2:30am
+|
+|---------------------05/04/18--------------------|
+|-------------------------------------------------|
+|-Image Viewer
+|
+|-------------------------------------------------|
+|-Amount   - 5
+|-Amount Finished - 1
+|-Started  - 10:10pm
+|-Finished - Unfinished
+|-Target   - 2:30am
+|
+|---------------------06/04/18--------------------|
+|-------------------------------------------------|
+|-Reverse animation on icons --
+|-Pin apps to taskbar and save pinned icons list --
+|-Click on sliding message dialogue --
+|-Half size homepage? --
+|-Remove time and OS actions to half homepage? --
+|
+|-------------------------------------------------|
+|-Amount   - 7
+|-Amount Finished - 7
+|-Started  - 8:33pm
+|-Finished - 2:47am
+|-Target   - 4:00am
+|
+|---------------------07/04/18--------------------|
+|-------------------------------------------------|
+|-Press home button to animate back to homepage --
+|-Icon that lets you know you have notifications --
+|-General bugs --
+|-Get rid of passive event listener warning --
+|
+|-------------------------------------------------|
+|-Amount   - 4 to 12
+|-Amount Finished - 5
+|-Started  - 12:56pm
+|-Finished - 2:13pm
+|-Target   - 3:00pm
+|
+|---------------------07/04/18--------------------|
+|-------------------------------------------------|
+|-more_vert for Columbus
+|-Multiple notification systems -
+|-Timer notifications? -
+|-Calendar notifications?
+|-Turn of website sound? -
+|
+|-------------------------------------------------|
+|-Amount   - 4
+|-Amount Finished -
+|-Started  - 3:22pm
+|-Finished - Unfinished
+|-Target   - 6:00pm
+|
+|---------------------08/04/18--------------------|
+|-------------------------------------------------|
+|-Basic app for developing apps and other code.
+|
+|-------------------------------------------------|
+|-Amount   - 4
+|-Amount Finished -
+|-Started  - 1:22pm
+|-Finished - Unfinished
+|-Target   - 8:00pm
+|
+|---------------------13/04/18--------------------|
+|-------------------------------------------------|
+|-Basic app for developing apps and other code.
+|
+|-------------------------------------------------|
+|-Amount   - 4
+|-Amount Finished -
+|-Started  - 1:22pm
+|-Finished - Unfinished
+|-Target   - 8:00pm
+|
+|---------------------04/05/18--------------------|
+|-------------------------------------------------|
+|-Settings App UI
+|-Media Player UI
+|
+|-------------------------------------------------|
+|-Amount   - 2
+|-Amount Finished - 2
+|-Started  - 8:21pm
+|-Finished - 11:52pm
+|-Target   - 12:00am
+|
+|---------------------04/05/18--------------------|
+|-------------------------------------------------|
+|-Columbus UI -
+|
+|-------------------------------------------------|
+|-Amount   - 1
+|-Amount Finished - 1
+|-Started  - 10:35am
+|-Finished - 07:02pm - 07/05/18
+|-Target   - Today
+|
+|---------------------04/05/18--------------------|
+|-------------------------------------------------|
+|-Leonardo UI
+|-Commander UI -
+|-Commander -
+|   -Create
+|   -Read
+|   -Update
+|   -Delete
+|   -CD
+|
+|-------------------------------------------------|
+|-Amount   - 7
+|-Amount Finished - 6
+|-Started  - 06:38am
+|-Finished -
+|-Target   - Friday
+|
+|---------------------04/05/18--------------------|
+|-------------------------------------------------|
+|-Start Continuum update
+|
+|-------------------------------------------------|
+|-Amount   - 1
+|-Amount Finished - 1
+|-Started  - 08:55pm
+|-Finished - ???????
+|-Target   - 12:00pm
+|
+|---------------------05/06/18--------------------|
+|-------------------------------------------------|
+|-Add more of the Continuum features.
+|
+|-------------------------------------------------|
+|-Amount   - 1
+|-Amount Finished - 1
+|-Started  - 05:33pm
+|-Finished - ???????
+|-Target   - 12:00pm
+|
+|---------------------07/06/18--------------------|
+|-------------------------------------------------|
+|-Am I crazy? Could I finish all Continuum updates
+| in one go?
+|
+|-------------------------------------------------|
+|-Amount   - 7
+|-Amount Finished - 1
+|-Started  - 01:48am
+|-Finished - ???????
+|-Target   - 06:00am
+|
+|---------------------07/06/18--------------------|
+|-------------------------------------------------|
+|-Am I crazy (again)? Could I finish all Continuum
+| updates in one go?
+|
+|-------------------------------------------------|
+|-Amount   - 7
+|-Amount Finished -
+|-Started  - 12:45am
+|-Finished - ???????
+|-Target   - 12:00pm
+|
+|---------------------Any Date--------------------|
+|-------------------------------------------------|
+|-------------------Possibility-------------------|
+|-Calendar notifications?
+|-------------------------------------------------|

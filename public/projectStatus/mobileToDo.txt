@@ -1,0 +1,23 @@
+###Nebula Store##
+    -Optimize for mobile experience
+#####Settings####
+    -Redesign for Materializecss
+#####TextPad#####
+#####Camera######
+        -Take photos, videos and view taken
+        photos/videos (3)
+####Columbus#####
+####Messenger####
+######Timer######
+    -Alarm clock? Possible?
+    -Timer notification.
+####Calendar#####
+    -Create/delete/edit events (3)
+##Image Viewer###
+    -Create app
+        -View and delete images/Videos (2)
+        -Rename images
+        -Basic editing (rotating,
+         hue/saturation change etc.)
+###Calculator####
+14 items

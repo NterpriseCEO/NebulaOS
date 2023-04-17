@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <link rel = "stylesheet" href = "http://localhost:8080/public/css/materialize.min.css" media="screen,projection">
+        <meta name = "viewport" content = "width=device-width, initial-scale=0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src = "http://localhost:8080/public/js/require2.3.2.js" data-main="js/index.js"></script>
+        <style>
+            .carousel, .carousel-item {
+                height: 100vh !important;
+            }
+            #stopwatch canvas, #timer canvas {
+                max-width: 80vw;
+                max-height: 80vw;
+            }
+            #timer {
+                position:relative;
+            }
+            #timer .value {
+                position: absolute;
+                z-index:1;
+                left:0;
+                right:0;
+                top:45%;
+                margin-top:-15px;
+                height:30px;
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body class = "blue-grey darken-4">
+        <div class = "carousel carousel-slider center">
+            <div class = "carousel-fixed-item center">
+                <a id = "start" class = "btn" data-text = "start"></a>
+                <a id = "reset" class = "btn" data-text = "reset"></a>
+                <a href = "#setTimer" id = "set" class = "modal-trigger btn" data-text = "set"></a>
+            </div>
+            <div class = "carousel-item" href = "#one!">
+                <h1 class = "white-text" data-text = "stopwatch"></h1>
+                <div id = "stopwatch"></div>
+                <h1 class = "timer white-text"></h1>
+            </div>
+            <div class = "carousel-item" href = "#two!">
+                <h1 class = "white-text" data-text = "timer"></h1>
+                <div href = "#setTimer" id = "timer" class = "modal-trigger"><h1 class="value white-text" data-text = "set"></h1></div>
+                <h1 class = "countdown white-text"></h1>
+            </div>
+            <div class = "carousel-item" href = "#three!">
+                <h1 class = "white-text" data-text = "alarmClock"></h1>
+                <h1 class = "alarm white-text"></h1>
+            </div>
+        </div>
+        <div id = "setTimer" class = "modal">
+            <div class = "modal-content">
+                <div class = "input-field">
+                    <input id = "timerVal" type = "text" placeholder="Value">
+                </div>
+            </div>
+            <div class = "modal-footer">
+                <a href = "#!" class = "modal-action btn-flat red-text modal-close waves-effect" data-text = "cancel"></a>
+                <a id = "confirm" href = "#!" class = "modal-action btn-flat blue-text modal-close waves-effect" data-text = "ok"></a>
+            </div>
+        </div>
+    </body>
+</html>

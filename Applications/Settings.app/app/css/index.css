@@ -1,0 +1,53 @@
+.deskNav {
+    visibility:hidden;
+}
+.show {
+    visibility:visible !important;
+}
+.mobileNav {
+    visibility:hidden;
+}
+
+.s2 {
+    text-align:center;
+    cursor:pointer;
+}
+
+input[type="file"] {
+    display:none;
+}
+
+#imagePreview {
+    display:none;
+    position:relative;
+    left:-2vw;
+    width:320px;
+    height:150px;
+    border:1px solid grey;
+    background-position:center;
+}
+
+#avatarImg {
+    width:30vw;
+    height:30vw;
+    margin:0 auto;
+    background-image:url("../../images/userIcon.png");
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:center;
+    border-radius:100%;
+    border:1px solid grey;
+    cursor:pointer;
+}
+
+.appName {
+    overflow-x:hidden;
+    padding-bottom:2vw !important;
+    text-overflow:ellipsis;
+}
+
+@media (hover:none) {
+    .s6 {
+        width:100% !important;
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "noChats":"Níl aon comhrá! Cliceáil '+'.",
+    "loadMore":"Lódáil Níos Mó",
+    "clear":"Glan",
+    "send":"Seol",
+    "noChatOpen":"Níl aon comhrá oscailte!",
+    "images":"Pictiúirí",
+    "newChat":"Comhrá nua",
+    "typeUsername":"Cineál ainm an úsáideora.",
+    "chattingWith":"Ag caint le: ",
+    "viewImages":"Breathnaig ar na pictiúirí",
+    "chatExists":"Tá comhrá ann cheana féin!",
+    "userNonExistent":"Níl an t-úsáideoir ann cheana féin!",
+    "confirm":"Deimhnigh",
+    "wishToDelete":"An mhaith leat an comhrá seo a scriosadh?",
+    "wishToDeleteText":"An mhaith leat an téacs seo a scriosadh?"
+}

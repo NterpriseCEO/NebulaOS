@@ -1,0 +1,101 @@
+#gkgmk {
+    position:absolute;
+    width:100vw;
+    height:100vh;
+    top:0;
+    left:0;
+    background-color:orange;
+    background-size:cover;
+    background-position:center;
+    z-index:1000000000;
+}
+#loginWrap {
+    overflow:hidden;
+    width:30vw;
+    margin-left:35vw;
+    margin-top:30vh;
+    padding:1vw;
+    border:1px solid grey;
+    border-radius:10px;
+}
+#loginWrap .col {
+    padding:0;
+}
+.row {
+    padding-top:1vw;
+    margin-bottom:0;
+}
+#login {
+    float:right;
+}
+#lTitle {
+    display:inline-block;
+    font-size:2.5vw;
+    margin-bottom:2vh;
+    font-weight:500;
+    color:white;
+}
+.loginType {
+    width:100%;
+    height:5vh;
+    font-size:1.5vw;
+    padding-left:1vw;
+    box-sizing:border-box;
+    border:none;
+    color:black;
+    border-radius:3px;
+    border:1px solid grey;
+}
+#password-type,#signCode-type {
+    margin-top:2vh;
+}
+.loginType:focus {
+    outline:0;
+}
+
+#login {
+    //margin-bottom:5vw;
+    //font-size:15vw;
+    //color:black;
+}
+
+.s5 {
+    padding:2vh !important;
+}
+
+@media all and (orientation:portrait) {
+    .loginType {
+        width:100%;
+        font-size:8vw;
+    }
+    #login-wrap {
+        border-top-left-radius:10px;
+        border-top-right-radius:10px;
+        padding-top:2vh !important;
+    }
+    #gkgmk .row {
+        margin-top:15vh;
+    }
+    #gkgmk .s5.offset-s1 {
+        border-bottom-left-radius:10px;
+        border-bottom-right-radius:0;
+    }
+    #gkgmk .s5 {
+        border-bottom-right-radius:10px;
+    }
+    #logBtns {
+        width:90vw;
+        margin-left:5vw;
+    }
+    #signUp,#login {
+        width:100%;
+    }
+}
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) {
+    .loginType {
+        width:50vw;
+        margin-left:25vw;
+        margin-top:10vh;
+        font-size:4vw;
+    }
+}

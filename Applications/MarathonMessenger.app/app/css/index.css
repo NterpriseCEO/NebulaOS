@@ -1,0 +1,437 @@
+body{
+    font-family:arial;
+    overflow:hidden;
+}
+* {
+    box-sizing:border-box;
+}
+
+.side-nav {
+    display:flex;
+    flex-direction:column;
+}
+#top {
+    flex-grow:0;
+    margin-top:5vh;
+}
+#search:focus {
+    border-bottom: 1px solid dodgerblue;
+}
+
+#groupsList {
+    flex-grow:1;
+    overflow-y:auto;
+    padding-bottom:1vw;
+    margin-top:12vh;
+}
+#newChat {
+    position:absolute;
+    top:5vh;
+    left:260px;
+    width:7vh;
+    height:7vh;
+    font-size:4vw;
+    text-align:center;
+    line-height:4vw;
+    color:dodgerblue;
+    cursor:pointer;
+}
+
+.card-content {
+    font-size:default;
+}
+
+.chat img {
+    float:left;
+    width:4vw;
+}
+
+.chat i.material-icons {
+    display:none;
+    font-size:48px;
+    line-height:25px;
+}
+.chat:hover i.material-icons {
+    display:inline;
+}
+.cName {
+    margin-left:1vw;
+}
+
+#back {
+    width:4vw;
+    padding-left:1vw;
+    cursor:pointer;
+}
+
+.selected {
+    background-color:rgb(58,173,255);
+}
+
+#mssgGroup {
+    position:absolute;
+    left:100vw;
+    width:calc(100% - 290px);
+    height:100%;
+    z-index:1;
+    transition: left 1s;
+}
+.navbar-fixed,nav,#groupInfo {
+    height:8vh !important;
+    padding:0 !important;
+    font-size:2vw;
+    line-height:2vh;
+}
+#groupInfo {
+    float:left;
+    width:25vw;
+}
+#callUser,#callUser i {
+    float:left;
+    width:2vw;
+    height:8vh;
+    line-height:8vh;
+    cursor:pointer;
+}
+#callPane {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    z-index:1000;
+}
+#gIUser {
+    float:left;
+    margin-left:1vw;
+}
+
+.text {
+    width:100%;
+    flex-grow:0;
+    margin-top:3vh;
+    table-layout:fixed;
+}
+.name {
+    float:left;
+    display:inline;
+    width:8.1vh;
+    height:8.1vh;
+    background-image:url("http://localhost:8080/public/images/userIcon.png");
+    border-radius:100%;
+    margin-right:1vw;
+    margin-left:1vw;
+    padding-left:0 !important;
+    text-align:center;
+    background-size:cover;
+    border:1px solid grey;
+}
+.chat .name {
+    margin-top:1px;
+}
+.name i {
+    font-size:8.1vh;
+}
+.cntnt {
+    float:left;
+    width:45%;
+    padding:1vw;
+    border-radius:10px;
+    word-break:break-all;
+    hyphens:auto;
+    //box-shadow: 0 1px 10px rgba(0,0,0,0.5);
+}
+.sentImgs {
+    display:none;
+    width:100%;
+    overflow-y:auto;
+    padding-right:1vh;
+    white-space:nowrap;
+    overflow-x:auto;
+    //overflow-y:hidden;
+}
+.sentImgs .img {
+    display:inline-block;
+    margin-top:1vw;
+    height:15vh;
+}
+.left {
+    background-color:rgb(0,250,0);
+    border-bottom-left-radius:0;
+}
+.right {
+    float:right;
+    background-color:rgb(200,200,255);
+    border-bottom-right-radius:0;
+}
+.fltrt {
+    float:right;
+}
+
+#mssgSender {
+    position:absolute;
+    width:calc(100vw - 300px);
+    height:20vh;
+    bottom:0;
+    background-color:rgb(220,220,220);
+    border-top:1px solid rgb(180,180,180);
+}
+
+input {
+    float:left;
+    width:100%;
+
+    border:none;
+    outline:none !important;
+    clear:both;
+}
+.emojionearea {
+    width:calc(100vw - 300px) !important;
+    max-height:20vh !important;
+    margin-left:0 !important;
+    border-radius:0 !important;
+    margin-top:0 !important;
+    outline:none !important;
+    border:none !important;
+}
+.emojionearea-editor {
+    min-height:1vh !important;
+    height:20vh !important;
+    max-height:20vh !important;
+    padding:1vw 10vw 0 7vw !important;
+}
+.emojionearea-editor:before {
+    line-height:9.6vh;
+}
+
+#images {
+    position:absolute;
+    width:10vh;
+    height:10vh;
+    background-image:url("../../images/cameraIcon.png");
+    background-size:10vh 10vh;
+    background-repeat:no-repeat;
+    background-position:1vh 0;
+    cursor:pointer;
+    z-index:1;
+}
+
+#imgsToSnd {
+    display:none;
+    float:left;
+    width:100%;
+    height:30vh;
+    padding-right:1vh;
+    white-space:nowrap;
+    overflow-x:auto;
+    overflow-y:hidden;
+}
+.img {
+    display:inline-block;
+    width:15vw;
+    height:28vh;
+    margin:1vh 1vh;
+    border:1px solid grey;
+    background-size:contain;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+.imgX {
+    display:none;
+    width:5.3vw;
+    height:5.3vw;
+    text-align:center;
+    float:right;
+    margin-top:1vh;
+    margin-right:1vh;
+    background-color:red;
+    border-radius:100%;
+    line-height:5.3vw;
+    cursor:pointer;
+}
+.img:hover .imgX {
+    display:block !important;
+}
+
+#sendClear {
+    position:absolute;
+    top:2vh;
+    right:1vh;
+    text-align:center;
+}
+#messages {
+    position:absolute;
+    display:flex;
+    flex-direction:column;
+    overflow-y:auto;
+    width:calc(100vw - 300px) !important;
+    height:72vh;
+    padding:1vw;
+    background-color:rgb(250,250,250);
+}
+.smaller {
+    height:calc(90% - 37vh) !important;
+}
+
+#noChatOpen {
+    position:absolute;
+    display:table;
+    width:20vw;
+    height:20vh;
+    left:55vw;
+    text-align:center;
+    line-height:3vw;
+    table-layout:fixed;
+}
+#nchImg {
+    display:table-row;
+    height:50vh;
+}
+#nchImg img {
+    position:absolute;
+    width:30vh;
+    top:20vh;
+    left:calc(10vw - 15vh);
+    border-radius:100%;
+}
+#nch {
+    display:table-row;
+    height:10vh;
+    vertical-align:middle;
+    font-size:3vw;
+}
+.animMGroup {
+    left:290px !important;
+}
+
+@media (hover:none) {
+    .emojionearea .emojionearea-editor  {
+        padding-left:12vh !important;
+        padding-right:16vh !important;
+        font-size:5.1vw !important;
+        line-height:5vw !important;
+        font-weight:normal !important;
+        color:black !important;
+        padding-top:3vh !important;
+    }
+    ::placeholder {
+        font-size: 5vw !important;
+        color:black;
+    }
+    .emojionearea .emojionearea-editor:empty:before {
+        font-size:10vw !important;
+    }
+    .side-nav {
+        width:100vw;
+        transform:translateX(0) !important;
+    }
+
+
+    #top {
+        margin-top:0 !important;
+        padding:2vw;
+        box-sizing:border-box;
+    }
+    #search {
+        border-radius:20px;
+        border:1px solid grey;
+        width:92vw !important;
+        background-color:rgb(250,250,250);
+        padding-left:3vw !important;
+        font-size:5vw;
+        color:grey;
+    }
+    #search:focus {
+        border:1px solid grey !important;
+        box-shadow:0px 0px 21px -6px rgba(0,0,0,0.75);
+        //box-shadow:0px 0px 29px -6px rgba(172,197,224,1);
+    }
+
+    #newChat {
+        top:2vw;
+        left:auto;
+        right:2vw;
+        line-height:7vh;
+        font-size:10vw !important;
+    }
+    #groupsList {
+        border-top:1px solid gainsboro;
+        margin-top:7.2vh !important;
+    }
+
+    #groupInfo {
+        width:auto;
+    }
+    #back {
+        display:inline-block;
+        width:8vw !important;
+        overflow:visible;
+    }
+    #callUser {
+        float:right;
+        width:8vw;
+        margin-right:2vw;
+    }
+    .animMGroup {
+        width:100vw !important;
+        left:0 !important;
+        z-index:100 !important;
+    }
+    .toHide {
+        display:none !important;
+    }
+    .chat {
+        padding:2vw !important;
+        height:12vh !important;
+        box-sizing:border-box !important;
+        font-size:8vw !important;
+        border-bottom:1px solid gainsboro;
+    }
+    .name {
+        width:8vh;
+        height:8vh;
+        margin-top:calc(2vh - 2vw) !important;
+    }
+    .cName {
+        margin-left:2vw;
+        line-height:calc(12vh - 3.5vw);
+    }
+
+    #gIUser {
+        float:left;
+        width:70vw;
+        font-size:7vw;
+    }
+    #messages {
+        width:100vw !important;
+        font-size:5vw;
+    }
+    #mssgSender {
+        width:100vw;
+    }
+    #mssgSender input {
+        padding-left:18vw;
+        padding-right:33vw;
+    }
+    .emojionearea.emojionearea-inline {
+        padding-left:11vh !important;
+        padding-right:10vh !important;
+    }
+
+    .emojionearea {
+        width:100vw !important;
+    }
+
+    .img {
+        width:30vw;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .side-nav {
+        transform:translateX(0) !important;
+    }
+    #noChatOpen {
+        left:62vw;
+    }
+}

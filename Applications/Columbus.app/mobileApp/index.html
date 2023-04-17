@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel = "stylesheet" href = "http://localhost:8080/public/css/materialize.min.css" media="screen,projection">
+        <link rel = "stylesheet" href = "css/index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=0">
+        <script src = "http://localhost:8080/public/js/require2.3.2.js"></script>
+        <script src="js/index.js"></script>
+    </head>
+    <body data-enhancce = "false">
+        <ul class = "side-nav collection with-header" id = "sidenav">
+            <li class = "mItem collection-header"><h5 data-text = "folders"></h5></li>
+            <li class = "current collection-item"><a href = "#!"><i class = "material-icons">folder_open</i><span class = "currentName">Desktop</span> <span data-text = "current"></span></a></li>
+            <li class = "mItem collection-item"><a href = "#!"><i class = "material-icons">folder</i>Desktop</a></li>
+            <li class = "mItem collection-item"><a href = "#!"><i class = "material-icons">folder</i>Documents</a></li>
+            <li class = "mItem collection-item"><a href = "#!"><i class = "material-icons">folder</i>Images_Video</a></li>
+            <li class = "mItem collection-item"><a href = "#!"><i class = "material-icons">folder</i>Music</a></li>
+        </ul>
+
+        <div id = "navbar" class = "white">
+            <a id = "menuBtn" href = "#" data-activates="sidenav" class = "button-collapse black-text left"><i class = "material-icons">menu</i></a>
+            <a id = "dropdownBtn" class = "dropdown-trigger right waves-effect black-text right" href = "#" data-activates="topMenu"><i class = 'material-icons'>more_vert</i></a>
+            <input id = "searchBox" class = "hide" required autocomplete="off" placeholder="Search" data-role="none">
+            <a id = "cancelSearch" class = "btn-collapse black-text right hide"><i class = 'material-icons'>close</i></a>
+            <label id = "search" class = "label-icon right black-text" for"search"><i class = "material-icons medium">search</i></label>
+        </div>
+        <div id = "folderTop" class = "white">
+            <img id = "headerFolder" src = "../../../public/images/fileFolder.png" width = "50%">
+            <br><span id = "headerTitle"></span>
+        </div>
+        <ul id = "topMenu" class = "dropdown-content">
+            <li><a href = "#!" class = "black-text newFile" data-text = "newFile"></a></li>
+            <li><a href = "#!" class = "black-text newFolder" data-text = "newFolder"></a></li>
+            <li><a href = "#!" class = "black-text paste" data-text = "paste"></a></li>
+        </ul>
+        <div class = "card emptyFolder center-align">
+            <div class = "card-content grey lighten-4" data-text = "emptier">
+            </div>
+        </div>
+        <ul class = "fold parent collection hide" data-FolderName = "Desktop">
+        </ul>
+        <ul class = "fold parent collection hide" data-FolderName = "Documents">
+        </ul>
+        <ul class = "fold parent collection hide" data-FolderName = "Images_Video">
+        </ul>
+        <ul class = "fold parent collection hide" data-FolderName = "Music">
+        </ul>
+        <div id = "bottomMenu" class = "modal bottom-sheet">
+            <div class = "modal-content">
+                <!--<ul class = "collection">
+
+                </ul>-->
+                <div id = "bMRename" class = "row">
+                    <div class = "col s10"><h4 class = "truncate"></h4></div>
+                    <div class = "col s2"><i class = "material-icons">edit</i></div>
+                </div>
+                <div id = "bMCopy" class = "row valign-wrapper">
+                    <div class = "col s2"><i class = "material-icons">content_copy</i></div>
+                    <div class = "col s10" data-text = "copy"></div>
+                </div>
+                <div id = "bMCut" class = "row valign-wrapper">
+                    <div class = "col s2"><i class = "material-icons">content_cut</i></div>
+                    <div class = "col s10" data-text = "cut"></div>
+                </div>
+                <div id = "bMDelete" class = "row valign-wrapper">
+                    <div class = "col s2"><i class = "material-icons">delete</i></div>
+                    <div class = "col s10" data-text = "delete"></div>
+                </div>
+            </div>
+        </div>
+        <div id = "addon" class = "z-depth-3">
+            <input type = "text" id = "fileName" placeholder ="File Name" data-role="none">
+            <a id = "ok" class = "btn disabled blue waves-effect right" data-text = "open"></a>
+            <a id = "cancel" class = "btn-flat red-text waves-effect right" data-text = "cancel"></a>
+        </div>
+    </body>
+</html>

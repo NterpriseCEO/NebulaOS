@@ -1,0 +1,20 @@
+{
+    "folders":"Folders",
+    "save":"Save",
+    "open":"Open",
+    "current":"- current",
+    "newFile":"New File",
+    "newFolder":"New Folder",
+    "paste":"Paste",
+    "emptier":"I'm emptier than your bank account!",
+    "copy":"Copy",
+    "cut":"Cut",
+    "delete":"Delete",
+    "cancel":"Cancel",
+    "folder":"Choose a folder name",
+    "file":"Choose a file name",
+    "alphanumeric":"Alphanumeric and dots only please",
+    "wishToDelete":"Do you want to delete this?",
+    "chooseNewName":"Choose a new name",
+    "rename":"Rename"
+}

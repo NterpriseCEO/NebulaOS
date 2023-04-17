@@ -1,0 +1,7 @@
+#1 Procrastination
+Solution - No procrastinating and read motivational tech
+articles.
+
+#2 Slow Dev time.
+Solution - Stop testing after every little change.
+         - Check for mistakes.

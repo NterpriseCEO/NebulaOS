@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <link rel = "stylesheet" href = "../../../../public/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel = "stylesheet" href = "css/index.css">
+        <link rel = "stylesheet" href = "css/emojis.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script data-main = "js/index.js" src = "../../../../public/js/require2.3.2.js"></script>
+        <style>
+            #search {
+                position:absolute;
+                width:calc(100% - 2vw);
+                padding-left:1vw;
+                padding-right:1vw;
+                margin:0;
+            }
+            #groupsList li {
+                border-bottom:1px solid gainsboro;
+            }
+            .content {
+                width:calc(100vw - 290px);
+                height:100vh;
+                left:100vw;
+                padding-left:1vw;
+            }
+        </style>
+    </head>
+    <body oncontextmenu="return false;">
+        <ul class = "side-nav fixed z-depth-3">
+            <li id = "top">
+                <input id = "search" type = "text" placeholder="Search" autocomplete="off">
+                <div id = "newChat">+</div>
+            </li>
+            <li id = "groupsList">
+                <a id = "noChats" href = "#!" class = "red-text hide" data-text = "noChats"></a>
+            </li>
+        </ul>
+        <div id = "mssgGroup" class = "content grey lighten-2">
+            <div class = "navbar-fixed">
+                <nav>
+                    <div class = "nav-wrapper white">
+                        <div id = "groupInfo" class = "nav-content valign-wrapper">
+                            &nbsp;<i id = "back" class = "material-icons black-text waves-effect">arrow_backwards</i>
+                            <span id = "gIUser" class = "black-text"></span>
+                        </div>
+                        <div id = "callUser"><i class = "material-icons black-text">phone</i></div>
+                    </div>
+                </nav>
+            </div>
+            <div id = "messages">
+                <a id = "loadMore" class = "btn blue hide" data-text = "loadMore"></a>
+            </div>
+            <div id = "mssgSender">
+                <div id = "images"></div>
+                <textarea id = "message" class = "browser-default" type = "text" autocomplete="false" placeholder="New message"></textarea>
+                <div id = "sendClear">
+                    <a id = "clear" class = "btn-flat large red-text" data-text = "clear">clear</a><br>
+                    <a id = "send" class = "btn blue large"><i class = "material-icons">send</i></a>
+                </div>
+                <div id = "imgsToSnd"></div>
+            </div>
+        </div>
+        <div id = "noChatOpen">
+            <div id = "nchImg">
+                <img src = "../images/icon.png">
+            </div>
+            <div id = "nch" data-text = "noChatOpen"></div>
+        </div>
+        <div id = "imagesModal" class = "modal">
+            <div class = "modal-content">
+                <h4 data-text = "images"></h4>
+            </div>
+        </div>
+        <div id = "callPane" class = "hide white">
+            <h1>User</h1>
+            <input id="volume" type="range" min="0" max="1" step="0.1" value="0.5"/>
+            <audio></audio>
+            <canvas class = "visualiser"></canvas>
+        </div>
+    </body>
+</html>

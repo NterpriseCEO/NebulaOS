@@ -1,0 +1,46 @@
+body {
+    overflow:hidden;
+}
+#camera {
+    position:absolute;
+    top:0;
+    left:0;
+    //width:100vw;
+    height:100vh;
+    background-color:black;
+    transform:scaleX(-1);
+}
+.reverse {
+    transform:scaleX(1) !important;
+}
+#snapshot {
+    position:absolute;
+    background-color:red;
+    z-index:1;
+}
+
+.flash {
+    position:absolute;
+    width:100vw;
+    height:100vh;
+    background-color:rgba(256,256,256,0);
+    transition:background-color 0.5s;
+}
+.pulse {
+    background-color:rgba(256,256,256,0.9);
+}
+
+#videoSource {
+    position:absolute;
+    z-index:10;
+}
+
+.fixed-floating-btn {
+    position:absolute;
+    width:100vw;
+    bottom:2vh;
+}
+.fixed-floating-btn a{
+    margin-left:2vh;
+    margin-right:2vh;
+}

@@ -1,0 +1,11 @@
+{
+    "clickX":"exitOnClick",
+    "clickFs":"restoreOnClick",
+    "clickMin":"hideOnClick",
+    "title":"Nebula Code",
+    "width":80,
+    "height":80,
+    "xPos":10,
+    "yPos":10,
+    "canFullscreen":true
+}

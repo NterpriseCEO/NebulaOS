@@ -1,0 +1,139 @@
+body {
+    user-select:none;
+}
+#startUp {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:auto;
+    min-height:100vh;
+    overflow-x:hidden;
+    z-index:10;
+}
+.collection-item {
+    cursor:pointer;
+}
+
+#top {
+    height:3vh;
+}
+
+.pane {
+    padding:0 !important;
+    height:100vh;
+    margin-bottom:0;
+}
+.s2,.s10 {
+    height:97vh;
+    padding:0 !important;
+}
+.aTab,#newTab {
+    position:relative;
+    display:inline-block;
+    width:20vw;
+    height:5vh;
+    text-align:center;
+    font-size:15px;
+    line-height:5.3vh;
+    border-left:1px solid rgb(30,30,30);
+    border-bottom:1px solid rgb(30,30,30);
+    cursor:pointer;
+}
+.aTab {
+    width:33%;
+    min-width:10%;
+}
+.selected {
+    border-right:2px solid dodgerblue;
+    border-bottom:none;
+}
+#newTab {
+    float:left;
+    width:5vw;
+    height:5vh;
+    border-right:none;
+    border-left:none;
+    border-right:1px solid rgb(30,30,30);
+}
+
+.closeTab {
+    visibility:hidden;
+    position:absolute;
+    right:0;
+}
+.aTab:hover .closeTab {
+    visibility:visible;
+}
+#editor,#fileTabs {
+    padding:0;
+}
+#fileTabs {
+    float:left;
+    height:5vh;
+    overflow:hidden;
+    white-space:nowrap;
+    font-size:0;
+}
+.aTab:first-of-type {
+    border-left:none;
+}
+
+#projectHeader,#projectTitle {
+    height:5vh;
+    line-height:5vh;
+}
+
+.ace_search {
+    width:100%;
+    height:40%;
+    top:60%;
+}
+::placeholder {
+    color:black !important;
+}
+.ace_search_field {
+    color:black !important;
+}
+.prev,.next {
+    padding:1vw !important;
+}
+
+.editor {
+    display:inline-block;
+    width:100%;
+    height:92vh !important;
+    //font-family:monospace;
+    resize:none;
+    box-sizing:border-box;
+    padding:1vw !important;
+    font-size:18px;
+    outline:none;
+    border:none;
+    white-space:nowrap;
+    border-radius:0 !important;
+    background-color:none;
+}
+.small-btn {
+    padding:5px !important;
+    line-height:30px;
+}
+#files {
+    width:100%;
+    height:86.4vh;
+    overflow:auto !important;
+}
+.file,.folder {
+    width:auto !important;
+    min-width:100%;
+    white-space:nowrap;
+}
+
+#files .col {
+    cursor:pointer;
+    padding:1vw;
+}
+
+.folder div {
+    margin-left:3vw !important;
+}

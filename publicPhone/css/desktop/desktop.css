@@ -1,0 +1,143 @@
+* {
+    box-sizing:border-box;
+    font-size:4vw;
+    font-family:arial;
+    user-select:none;
+    box-sizing:border-box;
+}
+.swiper-container {
+    width:100vw;
+    height:calc(94vh - 25vw);
+    text-align:center;
+}
+body {
+    overflow:hidden !important;
+}
+#osWrap {
+    position:absolute;
+    width:100vw;
+    height:100vh;
+    top:0;
+    left:0;
+    background-size:cover;
+    background-position:center;
+}
+#lTitle {
+    font-size:8vw !important;
+    color:black !important;
+}
+#gkgmk .btn-large {
+    width:100%;
+}
+#desktopBox {
+    position:relative;
+    width:100%;
+    height:calc(94vh - 25vw);
+    overflow:hidden !important;
+}
+
+#appsTable {
+    position:absolute;
+    width:100%;
+    height:100%;
+    white-space:nowrap;
+    touch-action:none;
+}
+
+.appPane {
+    text-align-last:left;
+}
+.icon {
+    position:relative;
+    display:inline-block;
+    width:21vw;
+    height:21vw;
+    margin-left:2vw;
+    margin-right:2vw;
+    margin-top:5vw;
+    margin-bottom:5vw;
+    border-radius:15px;
+    background-size:100% 100%;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.5);
+    z-index:1;
+}
+.aX {
+    display:none;
+    position:absolute;
+    width:8vw;
+    height:8vw;
+    top:-2vw;
+    right:-2vw;
+    background-color:red;
+    text-align-last:center;
+    border-radius:100%;
+    line-height:8vw;
+}
+.jiggle {
+    animation-name:jiggle;
+    animation-duration:0.2s;
+    animation-delay: -1;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    transform-origin: 30% 5%;
+}
+.jiggle:nth-child(2n+1) {
+    animation-direction:alternate-reverse;
+    transform-origin: 50% 10%;
+}
+@keyframes jiggle {
+    0% {
+        transform: rotate(-1deg);
+        animation-timing-function: ease-in;
+    }
+    50% {
+        transform: rotate(1.5deg);
+        animation-timing-function: ease-out;
+    }
+}
+.attl {
+    position:absolute;
+    width:100%;
+    top:100%;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+    text-align:center;
+    background-color:transparent !important;
+    color:black;
+    text-shadow:1px 1px 1px rgb(256,256,256);
+}
+
+#tableCount {
+    position:absolute;
+    width:60vw;
+    margin-left:20vw;
+    height:6vw;
+    bottom:3vw;
+    padding:0.5vw;
+}
+.tCBullet {
+    float:left;
+    width:6vw;
+    height:6vw;
+    margin-left:1vw;
+    border-radius:100%;
+    background-color:rgb(0,0,0);
+    box-shadow:0 0 20px rgba(256,256,256,0.8);
+}
+
+.application-frame {
+    position:absolute;
+    width:0;
+    height:0;
+    top:50vh;
+    left:50vw;
+    z-index:1;
+    border-radius:15px;
+    background-color:white;
+}
+.embed {
+    width:100%;
+    height:100%;
+    border:none;
+}

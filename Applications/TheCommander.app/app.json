@@ -1,0 +1,12 @@
+{
+  "clickX":"exitOnClick",
+  "clickFs":"restoreOnClick",
+  "clickMin":"hideOnClick",
+  "isFullscreen":false,
+  "xPos":10,
+  "yPos":15,
+  "width":50,
+  "height":60,
+  "title":"The Commander",
+  "canFullscreen":true
+}

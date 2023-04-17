@@ -1,0 +1,13 @@
+{
+  "clickX":"exitOnClick",
+  "clickFs":"restoreOnClick",
+  "clickMin":"hideOnClick",
+  "isFullscreen":false,
+  "xPos":35,
+  "yPos":10,
+  "width":30,
+  "height":70,
+  "title":"Settings",
+  "canFullscreen":false,
+  "canResize":false
+}
